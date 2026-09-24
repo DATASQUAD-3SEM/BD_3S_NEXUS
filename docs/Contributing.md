@@ -72,7 +72,14 @@ Segue a mesma ideologia do padrão de Commit.
   pode ser feito um commit direto no branch 'development' sem criar um novo branch" <br>
 - **Jamais faça alterações diretas no Branch principal (main)**
 
-### 2.1. Branching vinculado ao Jira
+### 2.1. Regras de Proteção de Branch
+
+1. **Não é permitido dar push direto** nem na `main` nem na `develop`.
+2. Qualquer alteração destinada à `develop` deve ser feita **exclusivamente através de Pull Request**.
+3. Você **NÃO** pode aprovar o seu próprio PR e fazer o merge — **é obrigatório** pedir para outra pessoa revisar antes.
+4. O merge do PR **deve** ser feito usando a opção **"Squash and merge"** (ver seção 4).
+
+### 2.2. Branching vinculado ao Jira
 Quando o branch estiver vinculado a uma issue do Jira, inclua a chave logo após o tipo:
 
 #### Formato Obrigatório:
@@ -110,9 +117,14 @@ O título do Pull Request deve seguir o mesmo padrão do commit principal, inclu
 
 
 ## 4. Padrão de Merge Commits (Fusão)
-Como utilizamos o tipo de merge padrão (que cria um commit de fusão), **não há necessidade de alterar a mensagem de merge** ao finalizar o PR.
+Todo PR **deve** ser finalizado com a opção **"Squash and merge"**. Isso combina todos os commits do branch em um único commit na `develop`/`main`, mantendo o histórico limpo e legível.
 
-O sistema fará a fusão e gerará automaticamente uma mensagem no seguinte formato:
-> `Merge pull request #<número_do_pr> from <ramo_origem>`
+Ao fazer o squash, edite a mensagem final do commit para seguir o mesmo padrão da seção 1 (tipo, escopo opcional, chave do Jira quando aplicável, descrição concisa):
 
-**Isso garante que tenhamos uma referência fácil e direta a qual PR introduziu as mudanças, mantendo o histórico limpo.**
+#### Formato Obrigatório:
+> `<tipo>(<escopo opcional>): [<CHAVE-JIRA>] <descrição concisa> (#<número_do_pr>)`
+
+#### Exemplo:
+> `feat(inicio): [PROJ-123] inserido mensagem de boas-vindas ao usuário (#42)`
+
+**Isso garante que cada commit na `develop`/`main` represente uma única mudança completa, rastreável ao PR e à issue do Jira que a originou.**
