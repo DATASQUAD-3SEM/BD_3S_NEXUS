@@ -89,7 +89,7 @@ Para uma User Story ser considerada **completa**, os seguintes critérios devem 
 
 - O código está escrito, testado e limpo (seguindo os padrões da equipe).
 
-- A funcionalidade deve estar integrada à branch **develop** do repositório [BD_3S_BACKEND](https://github.com/Wander717/BD_3S_BACKEND).
+- A funcionalidade está integrada à branch **develop** do repositório [BD_3S_BACKEND](https://github.com/DATASQUAD-3SEM/BD_3S_BACKEND) ou **develop** do repositório [BD_3S_FRONTEND](https://github.com/DATASQUAD-3SEM/BD_3S_FRONTEND).
 
 - Os **critérios de aceitação** de uma **User Story** foram completos.
 
