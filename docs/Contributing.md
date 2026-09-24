@@ -1,4 +1,3 @@
-
 #  Guia de Contribuição:
 
 Boas-vindas ao guia de contribuição! Nosso objetivo é manter o histórico do projeto limpo, consistente e fácil de entender para todos os membros do time. 
@@ -19,7 +18,7 @@ Use um dos seguintes tipos no início da sua mensagem. Escolha o que melhor desc
 > | `feat`     | Use quando adicionar algo novo ao programa.                                                                        | `feat(inicio): inserido mensagem de boas-vindas ao usuário` | 
 > | `fix`      | Use quando consertar algo que estava errado.                                                                       | `fix(calculadora): corrigido cálculo que mostrava resultado errado` | 
 > | `docs`     | Mudanças ou adições na documentação (README, guias, etc.).                                                         | `docs: adicionado passo a passo para rodar o programa no Visualg` | 
-> | `style`    | Alterações que não afetam o significado do código (formatação, espaços, ponto e vírgula).                          | `style(menu): melhorado nomes das variáveis para ficarem mais claros` | 
+> | `style`    | Alterações que não afetam o significado do código (formatação, espaços, ponto e vírgula).                          | `style(menu): melhorado nomes das variáveis para ficarem mais claras` | 
 > | `refactor` | Use quando reescrever partes do código para deixá-las mais simples ou melhores, mas sem alterar o resultado final. | `refactor(inicio): reorganizado os itens do menu principal` | 
 > | `test`     | Quando adicionar ou ajustar versões testes (beta,alfa,...)                                                         | `test(calculadora): trocado a formatação de texto para GUI`| 
 > | `chore`    | tarefas de manutenção / configuração que não mudam a lógica do programa                                            | `chore(estrutura): criado pastas src/ e docs/ e organiza arquivos do projeto` | 
@@ -41,6 +40,20 @@ O `<escopo>` é opcional, mas altamente recomendado para clareza. Ele especifica
 ### 1.3. Descrição Concisa
 A descrição deve ser escrita no **imperativo** (como se você estivesse dando uma ordem ou dizendo o que o commit faz) e **não deve terminar com ponto final.**
 
+### 1.4. Referenciando o Jira (Issue Key)
+
+Quando o commit estiver relacionado a uma tarefa do Jira, inclua a **chave da issue** (ex: `PROJ-123`) no início da descrição, entre colchetes, após o tipo/escopo.
+
+#### Formato Obrigatório:
+> `<tipo>(<escopo opcional>): [<CHAVE-JIRA>] <descrição concisa>`
+
+#### Exemplo:
+> `feat(inicio): [PROJ-123] inserido mensagem de boas-vindas ao usuário`
+
+- A chave deve vir sempre entre colchetes `[ ]`, logo antes da descrição.
+- Caso o commit não esteja vinculado a nenhuma issue (ex: pequenos ajustes internos), a chave pode ser omitida.
+- Isso permite que o Jira (e integrações como o Smart Commits) rastreiem automaticamente qual commit resolveu ou avançou determinada tarefa.
+
 
 ## 2. Padrão de Branching:
 Segue a mesma ideologia do padrão de Commit.
@@ -59,14 +72,23 @@ Segue a mesma ideologia do padrão de Commit.
   pode ser feito um commit direto no branch 'development' sem criar um novo branch" <br>
 - **Jamais faça alterações diretas no Branch principal (main)**
 
+### 2.1. Branching vinculado ao Jira
+Quando o branch estiver vinculado a uma issue do Jira, inclua a chave logo após o tipo:
+
+#### Formato Obrigatório:
+> `<tipo>/<CHAVE-JIRA>-<descrição-curta>`
+
+#### Exemplo:
+> `feat/PROJ-123-boas-vindas-usuario`
+
 
 ## 3. Padrão de Pull Request (PR)
 Ao criar um Pull Request, use o template abaixo para que o revisor saiba o que esperar.
 
 #### Título do PR
-O título do Pull Request deve seguir o mesmo padrão do commit principal: 
-> `Descricao concisa da ideia geral`
-- Exemplo: "Adicionadas novas pastas"
+O título do Pull Request deve seguir o mesmo padrão do commit principal, incluindo a chave do Jira entre colchetes quando aplicável: 
+> `[<CHAVE-JIRA>] Descricao concisa da ideia geral`
+- Exemplo: "[PROJ-123] Adicionadas novas pastas"
 #### Corpo do PR:
 ##### 1. O que foi feito? (Explique de forma simples o que você adicionou, mudou ou corrigiu no código).
 - Exemplo: "Foram adicionadas novas pastas para melhor organizar o diretorio"
