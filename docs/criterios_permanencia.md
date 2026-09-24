@@ -6,7 +6,7 @@
 ## 1. Atualização no JIRA
 (*Ao menos 3x por semana*)
 
-Deve ser feito um aviso no **"Quadro" do ClickUp** informando o progresso nas seguintes categorias:
+Deve ser feito um aviso no **"Quadro" do JIRA** informando o progresso nas seguintes categorias:
 
 - **A fazer:** O que ainda precisa ser feito.  
 - **Em andamento:** O que aquele indivíduo está fazendo no momento.
