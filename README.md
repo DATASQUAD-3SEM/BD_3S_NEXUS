@@ -9,7 +9,7 @@ Faculdade de Tecnologia de São José dos Campos - Professor Jessen Vidal
 
 <p align="center">  | <a href ="#desafio"> Desafio</a>  |  <a href ="#solucao"> Solução</a>  |     <a href ="#backlog"> Backlog do Produto</a>|     <a href ="#sprintbacklog"> Sprint Backlog </a>  |  <a href ="#sprint"> Cronograma de Sprints</a>  |  <a href ="#tecnologias">Tecnologias</a> |  <a href ="#link">Link para Documentação</a>  |   <a href ="#equipe"> Equipe</a> |</p>  
 
-> Status do Projeto: A iniciar...
+> Status do Projeto: Iniciado...
 
 ## Desafio <a id="desafio"></a>
 
