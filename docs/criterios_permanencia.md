@@ -1,15 +1,16 @@
 # Regras do Grupo - Critérios de permanencia
-**Efetivo desde 09/03/2026**
+**Efetivo desde 07/09/2026**
 
 ---
 
-## 1. Atualização no ClickUp
+## 1. Atualização no JIRA
 (*Ao menos 3x por semana*)
 
 Deve ser feito um aviso no **"Quadro" do ClickUp** informando o progresso nas seguintes categorias:
 
 - **A fazer:** O que ainda precisa ser feito.  
-- **Em andamento:** O que aquele indivíduo está fazendo no momento.  
+- **Em andamento:** O que aquele indivíduo está fazendo no momento.
+- **Em analise:** Faze de teste. 
 - **Concluído:** O que foi finalizado.  
 - **Dificuldades:** *(Opcional)* Apenas caso exista uma razão para não ter conseguido realizar o requisito.
 
@@ -33,10 +34,10 @@ Localizado na **página inicial do nosso repositório no GitHub**.
 ---
 
 ## 3. Atenção ao Grupo
-Todo integrante deve ficar atento às mensagens do **grupo** e às tarefas no **ClickUp**.
+Todo integrante deve ficar atento às mensagens do **grupo** e às tarefas no **JIRA**.
 
 Exemplo:
-- Se uma tarefa **X** foi publicada no grupo ou no ClickUp, todos os envolvidos devem responder ou agir.
+- Se uma tarefa **X** foi publicada no grupo ou no JIRA, todos os envolvidos devem responder ou agir.
 
 Não haverá mais insistência para respostas.  
 A ausência de resposta poderá resultar em **redução nos pontos PACER**.
