@@ -45,10 +45,10 @@ A descrição deve ser escrita no **imperativo** (como se você estivesse dando 
 Quando o commit estiver relacionado a uma tarefa do Jira, inclua a **chave da issue** (ex: `PROJ-123`) no início da descrição, entre colchetes, após o tipo/escopo.
 
 #### Formato Obrigatório:
-> `<tipo>(<escopo opcional>): [<CHAVE-JIRA>] <descrição concisa>`
+> `<tipo>[<CHAVE-JIRA>]: <descrição concisa>`
 
 #### Exemplo:
-> `feat(inicio): [PROJ-123] inserido mensagem de boas-vindas ao usuário`
+> `feat[PROJ-123]: inserido mensagem de boas-vindas ao usuário`
 
 - A chave deve vir sempre entre colchetes `[ ]`, logo antes da descrição.
 - Caso o commit não esteja vinculado a nenhuma issue (ex: pequenos ajustes internos), a chave pode ser omitida.
@@ -117,6 +117,7 @@ O título do Pull Request deve seguir o mesmo padrão do commit principal, inclu
 
 
 ## 4. Padrão de Merge Commits (Fusão)
+
 Todo PR **deve** ser finalizado com a opção **"Squash and merge"**. Isso combina todos os commits do branch em um único commit na `develop`/`main`, mantendo o histórico limpo e legível.
 
 Ao fazer o squash, edite a mensagem final do commit para seguir o mesmo padrão da seção 1 (tipo, escopo opcional, chave do Jira quando aplicável, descrição concisa):
@@ -124,6 +125,27 @@ Ao fazer o squash, edite a mensagem final do commit para seguir o mesmo padrão 
 #### Formato Obrigatório:
 > `<tipo>(<escopo opcional>): [<CHAVE-JIRA>] <descrição concisa> (#<número_do_pr>)`
 
+#### Exemplo:
+> `feat(inicio): [PROJ-123] inserido mensagem de boas-vindas ao usuário (#42)`
+
+### 4.1. Fluxo de Merge entre Branches
+
+A `main` **somente poderá receber alterações por meio de um merge originado da `develop`**.
+
+O fluxo obrigatório para integração das alterações é:
+
+> **Branch de trabalho → Pull Request → `develop` → Pull Request → `main`**
+
+- Alterações desenvolvidas em branches de trabalho devem ser integradas primeiro à `develop` por meio de Pull Request.
+- Após a integração na `develop`, as alterações poderão ser encaminhadas para a `main` por meio de um novo Pull Request.
+- **Não é permitido realizar merge diretamente de uma branch de trabalho para a `main`.**
+- **Não é permitido realizar push direto na `main`.**
+- A `main` deve conter somente alterações que tenham passado previamente pela `develop`.
+- Os merges devem respeitar as regras de revisão e aprovação definidas na seção **2.1. Regras de Proteção de Branch**.
+
+Esse fluxo garante que a `develop` funcione como ambiente de integração das alterações antes que elas sejam incorporadas à `main`, mantendo o histórico e o processo de revisão organizados.
+
+**Isso garante que cada commit na `develop`/`main` represente uma única mudança completa, rastreável ao PR e à issue do Jira que a originou.**
 #### Exemplo:
 > `feat(inicio): [PROJ-123] inserido mensagem de boas-vindas ao usuário (#42)`
 
