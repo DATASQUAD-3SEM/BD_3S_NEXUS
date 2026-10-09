@@ -7,7 +7,7 @@ Faculdade de Tecnologia de São José dos Campos - Professor Jessen Vidal
 
 <p align="center">  | <a href ="#desafio"> Desafio</a>  |  <a href ="#solucao"> Solução</a>  |     <a href ="#backlog"> Backlog do Produto</a>|     <a href ="#sprintbacklog"> Sprint Backlog </a>  |  <a href ="#sprint"> Cronograma de Sprints</a>  |  <a href ="#tecnologias">Tecnologias</a> |  <a href ="#link">Link para Documentação</a>  |   <a href ="#equipe"> Equipe</a> |</p>  
 
-> Status do Projeto: Iniciado...
+> Status do Projeto: Em andamento
 
 ## Desafio <a id="desafio"></a>
 
@@ -24,21 +24,17 @@ Na etapa de faturamento, a aplicação padroniza o recebimento dos espelhos envi
 ## Backlog do Produto <a id="backlog"></a>
 
 | Rank | Prioridade | User Story                                                                                                                                                                                                                   | Estimativa | Sprint |  
-| ---- |------------| ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |------------| ------ |  
+| ---- |------------| ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |------------|--------|  
 | 1    | Alta       | Como beneficiário, quero anexar o encaminhamento médico digitalizado ao meu cadastro, para que ele sirva de base na criação da pré-guia.                                                                                | 8          | 1      |  
-| 2    | Alta       | Como beneficiário, quero criar a pré-guia de forma digital informando a OCS e os procedimentos/exames a serem realizados, para que eu não precise ir pessoalmente ao FUSEX com o encaminhamento em mãos.                                                                                                               | 5          | 1      |  
-| 3    | Alta       | Como beneficiário, quero enviar a pré-guia preenchida para o setor de guias do FUSEX, para que ela seja analisada por um funcionário.                                                                        |            |  2      |  
-| 4    | Alta      | Como funcionário do FUSEX, quero visualizar a lista de pré-guias pendentes de análise, para que eu possa organizá-las e analisá-las por ordem de chegada.                                                                                                                 |            |   2     |  
-| 5    | Alta      | Como funcionário do FUSEX, quero visualizar os detalhes de uma pré-guia (encaminhamento, OCS escolhida, procedimentos), para que eu possa decidir se ela está apta a seguir no processo.                                                                                                           |            |    2    |  
-| 6    | Media      | Como beneficiário, quero acompanhar o status da minha pré-guia (pendente, em análise, aprovada, reprovada), para que eu saiba em que etapa do processo ela está.                                                                            |            |     2   |  
-| 7    | Media       | Como usuário do aplicativo, quero realizar meu cadastro e assinatura digital utilizando meu documento pessoal (RG), para que eu possa acessar o sistema sem burocracias desnecessárias.                                                                                                          |            |      2  |  
-| 8    | Media      | Como usuário do aplicativo (beneficiário ou funcionário do FUSEX), quero acessar o sistema com meu perfil específico, para que eu tenha acesso apenas às funcionalidades relacionadas ao meu papel.                                                                                                                              |            |       2 |  
-| 9    | Media       | Como funcionário do FUSEX, quero que o espelho enviado pela OCS seja recebido em um formato padronizado, para que os dados possam ser lidos e comparados automaticamente pelo sistema.                                                                                                   |            |       2 |  
-| 10   | Media       | Como funcionário do FUSEX, quero que o sistema compare automaticamente o valor da guia com o valor do espelho e do contrato, para que eu não precise fazer essa conferência manualmente item por item.                                                                                            |            |       3 |  
-| 11   | Media      | Como funcionário do FUSEX, quero que o sistema aponte automaticamente as guias com divergência de valores entre espelho e contrato, para que eu saiba exatamente onde preciso intervir.                                                                                                |            |    3    |  
-| 12   | Baixa       | Como funcionário do FUSEX, quero revisar o resultado consolidado da lisura/glosa de todas as guias da fatura antes de protocolar o mapa, para que eu possa corrigir eventuais erros enquanto ainda é possível alterá-los. |            |    3    |  
-| 13   | Baixa      | Como funcionário do FUSEX, quero visualizar o histórico de alterações feitas em uma lisura (automáticas e manuais), para que haja rastreabilidade de quem interveio e por quê.                                                                                                                         |            |    3   |  
-| 14   | Baixa      | Como funcionário do FUSEX, quero protocolar a sessão de geração do mapa após confirmar a revisão final, para que os valores da lisura sejam bloqueados e o processo siga para liquidação.                                                                                                                         |            |    3    |  
+| 2    | Alta       | Como beneficiário, quero criar a pré-guia de forma digital informando a OCS e os procedimentos/exames a serem realizados, para que eu não precise ir pessoalmente ao FUSEX com o encaminhamento em mãos.                                                                                                              | 5          | 1      |  
+| 3    | Alta       | Como beneficiário, quero acompanhar o status das minhas pré-guias já preenchidas e enviadas, para que eu saiba em que etapa do processo ela está.                                                                        |            | 2      |  
+| 4    | Alta      | Como médico do FUSEX, quero ter a possibilidade de criar uma pré-guia para um beneficiário durante uma consulta, para que não haja a necessidade de entregar um encaminhamento físico ao beneficiário.                                                                                                                |            | 2      |  
+| 5    | Alta      | Como funcionário do setor de Guias do FUSEX, quero visualizar os detalhes de uma pré-guia, para que eu possa gerar uma Guia digital com as informações.                                                                                                           |            | 2      |  
+| 6    | Media      | Como um usuário do aplicativo, quero realizar meu cadastro e incluir uma assinatura digital utilizando meu documento pessoal, para que eu possa acessar e utilizar o sistema com menos burocracias e processos repetitivos.                                                                            |            | 2      |  
+| 7    | Media       | Como funcionário do setor de faturas do FUSEX, quero que o espelho enviado pela OCS seja recebido em um formato padronizado, para que os dados possam ser facilmente lidos e coletados pelo sistema.                                                                                                          |            | 3      |  
+| 8    | Media      | Como funcionário do setor de rastreabilidade do FUSEX, quero que o sistema compare automaticamente o valor da Guia com o valor do espelho, para que eu possa visualizar e corrigir divergências.                                                                                                                             |            | 3      |  
+| 9    | Media       | Como funcionário do setor de rastreabilidade do FUSEX, quero que o sistema compare automaticamente o valor do espelho com o valor presente no contrato com a OCS, para a possível necessidade de agilizar a glosa.                                                                                                    |            | 3      |  
+| 10   | Media       | Como funcionário do setor de rastreabilidade do FUSEX, quero conferir as comparações automáticas antes de concluir a rastreabilidade de uma fatura, para que eu possa corrigir eventuais erros antes de enviá-los para a auditoria final.                                                                                            |            | 3      |
 
 * * *  
 
@@ -64,12 +60,33 @@ Na etapa de faturamento, a aplicação padroniza o recebimento dos espelhos envi
 
 * * *  
 
+<details>  
+  <summary><b>Sprint 2</b></summary>  
+
+### **Sprint 1: Execução e Planejamento**
+
+* **Capacidade Estimada da Equipe:** 
+* **Meta da Sprint:** User Story de rank 3, 4 e 5.
+* **Metas Extras:** User Story de rank 6.
+
+| Link                                                                            | rank | Prioridade | User Story                                                                                                                                    | Estimativa | Sprint |  
+|---------------------------------------------------------------------------------|------| ---------- | --------------------------------------------------------------------------------------------------------------------------------------------- |--------|--------|  
+| [Acompanhar Status das pré-guias](docs/sprint/Sprint-1/US1.md)                  | 3    | Alta       | Como beneficiário, quero acompanhar o status das minhas pré-guias já preenchidas e enviadas, para que eu saiba em que etapa do processo ela está. |        | 1      |  
+| [Criação digital da pré-guia pelo médico do FUSEX](docs/sprint/Sprint-1/US2.md) | 4    | Alta       | Como médico do FUSEX, quero ter a possibilidade de criar uma pré-guia para um beneficiário durante uma consulta, para que não haja a necessidade de entregar um encaminhamento físico ao beneficiário.                                |        | 2      |
+| [Vizualização das pré-guias recebidas](docs/sprint/Sprint-1/US2.md)             | 5    | Alta       | Como funcionário do setor de Guias do FUSEX, quero visualizar os detalhes de uma pré-guia, para que eu possa gerar uma Guia digital com as informações.                                |        | 2      |
+| [Assinaturas digitais](docs/sprint/Sprint-1/US2.md)                             | 6    | Alta       | Como um usuário do aplicativo, quero realizar meu cadastro e incluir uma assinatura digital utilizando meu documento pessoal, para que eu possa acessar e utilizar o sistema com menos burocracias e processos repetitivos.                                |        | 2      |
+</details>  
+
+<br>  
+
+* * *  
+
 ## Cronograma de Sprints <a id="sprint"></a>
 
 Sprint | Previsão | Status       |  
 |------|--------|--------------|  
-|Sprint 01 | 07/09/2026 | Finalizada |  
-|Sprint 02| 05/10/2026| Não iniciado |  
+|Sprint 01 | 07/09/2026 | Finalizada   |  
+|Sprint 02| 05/10/2026| Em andamento |  
 |Sprint 03| 02/11/2026 | Não iniciado |  
 
 * * * 
@@ -124,8 +141,6 @@ Para uma User Story ser considerada **completa**, os seguintes critérios devem 
 | Função        | Nome                                    | Github                                                                                                                                              |  
 | ------------- | --------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------- |  
 | Product Owner | Wanderson Ricardo dos Santos            | [![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Wander717)               |  
-| Scrum Master  | Maria Clara Prado Farkas                | [![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/mariaclarafarkas75-byte) |  
-| Team Member   | Breno Souza de Andrade                  | [![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/brenobsa)                |  
-| Team Member   | Matheus Henrique Ambrósio do Nascimento | [![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Froguie)                 |  
+| Scrum Master  | Maria Clara Prado Farkas                | [![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/mariaclarafarkas75-byte) |
 | Team Member   | Guilhermina Moreira D'Onofrio           | [![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/guismdonofrio)           |  
 | Team Member   | Rubens Ferreira Venancio                | [![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/rubensvnc/)              |
