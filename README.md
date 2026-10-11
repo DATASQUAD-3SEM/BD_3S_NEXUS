@@ -23,18 +23,21 @@ Na etapa de faturamento, a aplicação padroniza o recebimento dos espelhos envi
 
 ## Backlog do Produto <a id="backlog"></a>
 
-| Rank | Prioridade | User Story                                                                                                                                                                                                                   | Estimativa | Sprint |  
-| ---- |------------| ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |------------|--------|  
-| 1    | Alta       | Como beneficiário, quero anexar o encaminhamento médico digitalizado ao meu cadastro, para que ele sirva de base na criação da pré-guia.                                                                                | 8          | 1      |  
-| 2    | Alta       | Como beneficiário, quero criar a pré-guia de forma digital informando a OCS e os procedimentos/exames a serem realizados, para que eu não precise ir pessoalmente ao FUSEX com o encaminhamento em mãos.                                                                                                              | 5          | 1      |  
-| 3    | Alta       | Como beneficiário, quero acompanhar o status das minhas pré-guias já preenchidas e enviadas, para que eu saiba em que etapa do processo ela está.                                                                        |            | 2      |  
-| 4    | Alta      | Como médico do FUSEX, quero ter a possibilidade de criar uma pré-guia para um beneficiário durante uma consulta, para que não haja a necessidade de entregar um encaminhamento físico ao beneficiário.                                                                                                                |            | 2      |  
-| 5    | Alta      | Como funcionário do setor de Guias do FUSEX, quero visualizar os detalhes de uma pré-guia, para que eu possa gerar uma Guia digital com as informações.                                                                                                           |            | 2      |  
-| 6    | Media      | Como um usuário do aplicativo, quero realizar meu cadastro e incluir uma assinatura digital utilizando meu documento pessoal, para que eu possa acessar e utilizar o sistema com menos burocracias e processos repetitivos.                                                                            |            | 2      |  
-| 7    | Media       | Como funcionário do setor de faturas do FUSEX, quero que o espelho enviado pela OCS seja recebido em um formato padronizado, para que os dados possam ser facilmente lidos e coletados pelo sistema.                                                                                                          |            | 3      |  
-| 8    | Media      | Como funcionário do setor de rastreabilidade do FUSEX, quero que o sistema compare automaticamente o valor da Guia com o valor do espelho, para que eu possa visualizar e corrigir divergências.                                                                                                                             |            | 3      |  
-| 9    | Media       | Como funcionário do setor de rastreabilidade do FUSEX, quero que o sistema compare automaticamente o valor do espelho com o valor presente no contrato com a OCS, para a possível necessidade de agilizar a glosa.                                                                                                    |            | 3      |  
-| 10   | Media       | Como funcionário do setor de rastreabilidade do FUSEX, quero conferir as comparações automáticas antes de concluir a rastreabilidade de uma fatura, para que eu possa corrigir eventuais erros antes de enviá-los para a auditoria final.                                                                                            |            | 3      |
+| Rank | Prioridade | User Story | Estimativa | Sprint |  
+| ---- |------------| ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |--|--------|  
+| 1    | Alta       | Como beneficiário, quero anexar o encaminhamento médico digitalizado ao meu cadastro, para que ele sirva de base na criação da pré-guia. | 8 | 1      |  
+| 2    | Alta       | Como beneficiário, quero criar a pré-guia de forma digital informando a OCS e os procedimentos/exames a serem realizados, para que eu não precise ir pessoalmente ao FUSEX com o encaminhamento em mãos. | 5 | 1      |  
+| 3    | Alta       | Como beneficiário, quero acompanhar os status das minhas pré-guias já preenchidas e enviadas, para que eu saiba em que etapa do processo ela está. |  | 2      |  
+| 4    | Alta       | Como médico do FUSEX, quero ter a possibilidade de criar uma pré-guia para um beneficiário durante uma consulta, para que não haja a necessidade de entregar um encaminhamento físico ao beneficiário. |  | 2      |  
+| 5    | Alta       | Como funcionário do setor de Guias do FUSEX, quero visualizar e gerenciar os detalhes de uma pré-guia recebida, para que eu possa gerar uma Guia digital com as informações coletadas. |  | 2      |  
+| 6    | Média      | Como beneficiário, quero ter a possibilidade de acessar as Guias emitidas em meu perfil de forma totalmente digital, para que eu não precise ir até o FUSEX desnecessariamente. |  | 2      |  
+| 7    | Média      | Como beneficiário, quero ter a possbilidade de conseguir a Guia impressa indo até a recepção do FUSEX, para o caso de eu estar sem acesso ao aplicativo. |  | 2      |  
+| 8    | Média      | Como um usuário do aplicativo, quero incluir uma assinatura digital em meu perfil após a conclusão do meu cadastro, para que eu possa assinar as Guias com menos gargalos e burocracias. |  | 2      |  
+| 9    | Média      | Como beneficiário, quero ter a possibilidade de incluir um dependente em uma pré-guia, para garantir que ele também tenha direito ao FUSEX. |  | 3      |  
+| 10   | Baixa      | Como funcionário do setor de faturas do FUSEX, quero que o espelho enviado pela OCS seja recebido em um formato padronizado, para que os dados possam ser facilmente lidos e coletados pelo sistema. |  | 3      |  
+| 11   | Baixa      | Como funcionário do setor de rastreabilidade do FUSEX, quero que o sistema compare automaticamente o valor da Guia com o valor do espelho, para que eu possa visualizar e corrigir divergências. |  | 3      |  
+| 12   | Baixa      | Como funcionário do setor de rastreabilidade do FUSEX, quero que o sistema compare automaticamente o valor do espelho com o valor presente no contrato com a OCS, para a possível necessidade de agilizar a glosa. |  | 3      |  
+| 13   | Baixa      | Como funcionário do setor de rastreabilidade do FUSEX, quero conferir as comparações automáticas antes de concluir a rastreabilidade de uma fatura, para que eu possa corrigir eventuais erros antes de enviá-los para a auditoria final. |  | 3      |
 
 * * *  
 
@@ -63,18 +66,20 @@ Na etapa de faturamento, a aplicação padroniza o recebimento dos espelhos envi
 <details>  
   <summary><b>Sprint 2</b></summary>  
 
-### **Sprint 1: Execução e Planejamento**
+### **Sprint 2: Execução e Planejamento**
 
 * **Capacidade Estimada da Equipe:** 
-* **Meta da Sprint:** User Story de rank 3, 4 e 5.
-* **Metas Extras:** User Story de rank 6.
+* **Meta da Sprint:** User Stories de rank 3, 4, 5, 6 e 7 (Acompanhamento, criação médica, gestão de pré-guias, acesso a guias e impressão na recepção).
+* **Metas Extras:** User Story de rank 8 (Assinatura digital).
 
-| Link                                                                            | rank | Prioridade | User Story                                                                                                                                    | Estimativa | Sprint |  
-|---------------------------------------------------------------------------------|------| ---------- | --------------------------------------------------------------------------------------------------------------------------------------------- |--------|--------|  
-| [Acompanhar Status das pré-guias](docs/sprint/Sprint-1/US1.md)                  | 3    | Alta       | Como beneficiário, quero acompanhar o status das minhas pré-guias já preenchidas e enviadas, para que eu saiba em que etapa do processo ela está. |        | 1      |  
-| [Criação digital da pré-guia pelo médico do FUSEX](docs/sprint/Sprint-1/US2.md) | 4    | Alta       | Como médico do FUSEX, quero ter a possibilidade de criar uma pré-guia para um beneficiário durante uma consulta, para que não haja a necessidade de entregar um encaminhamento físico ao beneficiário.                                |        | 2      |
-| [Vizualização das pré-guias recebidas](docs/sprint/Sprint-1/US2.md)             | 5    | Alta       | Como funcionário do setor de Guias do FUSEX, quero visualizar os detalhes de uma pré-guia, para que eu possa gerar uma Guia digital com as informações.                                |        | 2      |
-| [Assinaturas digitais](docs/sprint/Sprint-1/US2.md)                             | 6    | Alta       | Como um usuário do aplicativo, quero realizar meu cadastro e incluir uma assinatura digital utilizando meu documento pessoal, para que eu possa acessar e utilizar o sistema com menos burocracias e processos repetitivos.                                |        | 2      |
+| Link | rank | Prioridade | User Story | Estimativa | Sprint |  
+|---------------------------------------------------------------------------------|------|------------| --------------------------------------------------------------------------------------------------------------------------------------------- |--|--------|  
+| [Acompanhar Status das pré-guias](docs/sprint/Sprint-2/US3.md)                  | 3    | Alta       | Como beneficiário, quero acompanhar o status das minhas pré-guias já preenchidas e enviadas, para que eu saiba em que etapa do processo ela está. |  | 2      |  
+| [Criação digital da pré-guia pelo médico](docs/sprint/Sprint-2/US4.md)          | 4    | Alta       | Como médico do FUSEX, quero ter a possibilidade de criar uma pré-guia para um beneficiário durante uma consulta, para que não haja a necessidade de entregar um encaminhamento físico ao beneficiário. |  | 2      |
+| [Visualização e gestão de pré-guias](docs/sprint/Sprint-2/US5.md)               | 5    | Alta       | Como funcionário do setor de Guias do FUSEX, quero visualizar e gerenciar os detalhes de uma pré-guia recebida, para que eu possa gerar uma Guia digital com as informações coletadas. |  | 2      |
+| [Acesso às Guias no perfil](docs/sprint/Sprint-2/US6.md)                          | 6    | Média      | Como beneficiário, quero ter a possibilidade de acessar as Guias emitidas em meu perfil de forma totalmente digital, para que eu não precise ir até o FUSEX desnecessariamente. |  | 2      |
+| [Impressão de Guia na recepção](docs/sprint/Sprint-2/US7.md)                    | 7    | Média      | Como beneficiário, quero ter a possbilidade de conseguir a Guia impressa indo até a recepção do FUSEX, para o caso de eu estar sem acesso ao aplicativo. |  | 2      |
+| [Inclusão de assinatura digital](docs/sprint/Sprint-2/US8.md)                    | 8    | Média      | Como um usuário do aplicativo, quero incluir uma assinatura digital em meu perfil após a conclusão do meu cadastro, para que eu possa assinar as Guias com menos gargalos e burocracias. |  | 2      |
 </details>  
 
 <br>  
