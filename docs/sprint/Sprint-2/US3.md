@@ -23,5 +23,5 @@ O ciclo de vida da pré-guia é representado por status que permitem total trans
 - Clara separação entre instruções, descrição e exemplos (ver seções "Sobre o acompanhamento de status" e "Detalhamento do processo").
 - Critérios de aceitação e regras de negócio definidos.
 - Prioridade definida: **Alta**.
-- Esforço definido pela equipe: 
+- Esforço definido pela equipe: 5
 

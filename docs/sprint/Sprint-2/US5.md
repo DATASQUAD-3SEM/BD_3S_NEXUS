@@ -20,5 +20,5 @@ O funcionário do setor de Guias opera através de uma conta de setor genérica 
 - Clara separação entre instruções, descrição e exemplos (ver seções "Sobre a gestão pelo setor de Guias" e "Detalhamento do processo").
 - Critérios de aceitação e regras de negócio definidos.
 - Prioridade definida: **Alta**.
-- Esforço definido pela equipe: 
+- Esforço definido pela equipe: 8
 

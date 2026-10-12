@@ -18,5 +18,5 @@ A recepção do FUSEX conta com um usuário de setor específico (`RECEPCAO`) qu
 - Clara separação entre instruções, descrição e exemplos (ver seções "Sobre a impressão na recepção" e "Detalhamento do processo").
 - Critérios de aceitação e regras de negócio definidos.
 - Prioridade definida: **Média**.
-- Esforço definido pela equipe: 
+- Esforço definido pela equipe: 4
 

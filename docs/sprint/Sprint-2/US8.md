@@ -18,5 +18,5 @@ A assinatura digital (`assinatura_url`) é o recurso que permite aos perfis habi
 - Clara separação entre instruções, descrição e exemplos (ver seções "Sobre a assinatura digital" e "Detalhamento do processo").
 - Critérios de aceitação e regras de negócio definidos.
 - Prioridade definida: **Média**.
-- Esforço definido pela equipe: 
+- Esforço definido pela equipe: 7
 

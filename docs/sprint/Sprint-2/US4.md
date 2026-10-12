@@ -20,5 +20,5 @@ Quando o beneficiário passa em consulta diretamente com um médico do FUSEX (Ro
 - Clara separação entre instruções, descrição e exemplos (ver seções "Sobre a criação de pré-guia médica" e "Detalhamento do processo").
 - Critérios de aceitação e regras de negócio definidos.
 - Prioridade definida: **Alta**.
-- Esforço definido pela equipe: 
+- Esforço definido pela equipe: 5
 
