@@ -10,7 +10,8 @@ O ciclo de vida da pré-guia é representado por status que permitem total trans
 ## Detalhamento do processo:
 1. O beneficiário loga no aplicativo e acessa a aba de acompanhamento de pré-guias.
 2. O sistema exibe a listagem de todas as pré-guias vinculadas ao beneficiário, mostrando a OCS, data de criação e o status atual.
-3. Se o status for **Atenção**, o beneficiário visualiza a observação do atendente e dispõe da opção de corrigir as informações ou reenviar o arquivo. Ao reenviar, a pré-guia retorna automaticamente para o status **Pendente**.
+3. Se o status for **Atenção**, o beneficiário visualiza a observação do atendente e dispõe da opção de corrigir as informações ou reenviar o arquivo. Ao reenviar, a pré-guia retorna automaticamente para o status **Pendente**. 
+Obs: Se a pré-guia foi emitida por um médico, o mesmo deverá realizar a correção.
 4. Se o status for **Concluída**, o beneficiário pode visualizar, baixar ou imprimir a Guia oficial em formato PDF.
 ## Critérios de aceitação:
 - Certifique-se de que o beneficiário consiga visualizar claramente o status atual de cada pré-guias cadastrada (*Pendente*, *Em Análise*, *Atenção* ou *Concluída*).
