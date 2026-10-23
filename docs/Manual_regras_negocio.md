@@ -79,25 +79,25 @@ Antes de iniciar o desenvolvimento da aplicação, o desenvolvedor deve internal
 
 **Tela 1 — Painel**
 
-![Tela 1 - Painel](telas_prototipos/tela_1.png)
+![Tela 1 - Painel](telas_prototipos/sprint1/tela_1.png)
 
 Tela inicial do beneficiário ao logar, com acesso rápido à criação de uma nova pré-guia.
 
 **Tela 2 — Minhas pré-guias**
 
-![Tela 2 - Minhas pré-guias](telas_prototipos/tela_2.png)
+![Tela 2 - Minhas pré-guias](telas_prototipos/sprint1/tela_2.png)
 
 Lista das pré-guias já criadas pelo beneficiário logado.
 
 **Tela 3 — Meu perfil**
 
-![Tela 3 - Meu perfil](telas_prototipos/tela_3.png)
+![Tela 3 - Meu perfil](telas_prototipos/sprint1/tela_3.png)
 
 Dados de cadastro do beneficiário logado.
 
 **Tela 4 — Nova pré-guia**
 
-![Tela 4 - Nova pré-guia](telas_prototipos/tela_4.png)
+![Tela 4 - Nova pré-guia](telas_prototipos/sprint1/tela_4.png)
 
 Tela de criação da pré-guia: dados do beneficiário (somente leitura), upload do encaminhamento médico e busca da OCS desejada.
 
