@@ -14,7 +14,7 @@ Faculdade de Tecnologia de São José dos Campos - Professor Jessen Vidal
 ## 📌 Links úteis <a id="jira"></a> <a id="contribuicao"></a>
 
 - 🎯 **[Board do Jira (público)](https://apidatasquad3sem.atlassian.net/issues?filter=10001)** — Acompanhamento das issues e da sprint atual.
-- 📖 **[Guia de Contribuição](./CONTRIBUTING.md)** — Padrões de commit, branch, PR e merge.
+- 📖 **[Guia de Contribuição](./docs/CONTRIBUTING.md)** — Padrões de commit, branch, PR e merge.
 
 ## 👥 Alocação de Tarefas
 
