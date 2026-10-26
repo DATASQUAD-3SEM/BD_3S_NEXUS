@@ -89,13 +89,19 @@ A nomenclatura de branch deve seguir a estrutura de Tela (T) e Task (FE/BE):
 
 ### 3.1 Título
 
-Segue o **mesmo padrão do commit**:
+O título do Pull Request segue um padrão próprio, focado na identificação rápida da tarefa:
 
-    <tipo>(<CHAVE-JIRA>-<Ty-FEx>): <descrição>
+    [<CHAVE-JIRA>] <descrição>
+    [NAO-POSSUI-CHAVE-JIRA] <descrição>
 
-Exemplo:
+- **`[<CHAVE-JIRA>]`** — A chave da issue entre colchetes (ex: `[SCRUM-82]`).
+- **`[NAO-POSSUI-CHAVE-JIRA]`** — Utilize esta tag caso a alteração não esteja atrelada a um card no Jira.
+- **`<descrição>`** — Descrição clara e objetiva com a primeira letra maiúscula.
 
-    feat(SCRUM-12-T1-BE1): adicionar endpoint de pré-guia
+**Exemplos:**
+
+    [SCRUM-82] Devolver Nova pre-guia ao menu do beneficiario
+    [NAO-POSSUI-CHAVE-JIRA] Corrigir perfil de banco errado
 
 ### 3.2 Corpo (Template)
 
@@ -126,13 +132,13 @@ Ao abrir um Pull Request, copie e cole o template abaixo no campo de descrição
 Todo Pull Request deve ser finalizado utilizando a opção **"Create a merge commit"**. 
 Isso preserva o histórico de commits individuais da branch de trabalho e gera um commit de merge na `develop`/`main`, garantindo a rastreabilidade exata das alterações.
 
-Ao realizar o merge, edite a mensagem final do commit de merge para seguir o mesmo padrão da Seção 1:
+A mensagem gerada automaticamente pelo GitHub ao realizar o merge deve ser mantida. Não é necessário editá-la.
 
-**Formato Obrigatório:**
-    <tipo>(<CHAVE-JIRA>-<Ty-FEx>): <descrição concisa> (#<número_do_pr>)
+**Formato Padrão (Gerado pelo GitHub):**
+    Merge pull request #<número_do_pr> from <nome_do_repositorio>/<nome_da_branch>
 
 **Exemplo:**
-    feat(SCRUM-123-T1-FE1): adicionar mensagem de boas-vindas (#42)
+    Merge pull request #66 from DATASQUAD-3SEM/fix/dev-tunnel
 
 ### 4.1. Fluxo de Merge entre Branches
 
@@ -160,7 +166,7 @@ Esse fluxo garante que a `develop` funcione como ambiente de integração das al
 | Commit                | `tipo(SCRUM-12-T1-FE1): descrição` |
 | Branch (Frontend)     | `tipo/SCRUM-12-T1-FE1` |
 | Branch (Backend)      | `tipo/SCRUM-12-T1-BE1` |
-| Título do PR          | igual ao commit |
-| Merge                 | "Create a merge commit" com a mensagem do commit + `(#PR)` |
+| Título do PR          | `[SCRUM-12] Descrição` ou `[NAO-POSSUI-CHAVE-JIRA] Descrição` |
+| Merge                 | "Create a merge commit" (Mensagem padrão do GitHub) |
 | Pós-Merge             | Apagar a branch de trabalho (ex: `feat/SCRUM-00-T1-FE1`) |
-| Descrição             | infinitivo, minúscula, sem ponto final |
+| Descrição (commit)    | infinitivo, minúscula, sem ponto final |
