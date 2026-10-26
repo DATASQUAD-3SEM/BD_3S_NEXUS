@@ -25,9 +25,3 @@ A pré-guia é o documento criado pelo beneficiário dentro do sistema, com base
 - Prioridade definida: **Alta**.
 - Esforço definido pela equipe: **M**.
 
-## Definition of Done (DoD)
-- O código está escrito, testado e limpo (seguindo os padrões da equipe).
-- A funcionalidade está integrada à branch **develop** do repositório [BD_3S_BACKEND](https://github.com/DATASQUAD-3SEM/BD_3S_BACKEND) ou **develop** do repositório [BD_3S_FRONTEND](https://github.com/DATASQUAD-3SEM/BD_3S_FRONTEND).
-- Os critérios de aceitação desta User Story foram completos.
-- A interface leva em consideração a facilidade de uso ao usuário.
-- A funcionalidade foi testada e aprovada pelo Product Owner (PO).
