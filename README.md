@@ -5,9 +5,29 @@ Faculdade de Tecnologia de São José dos Campos - Professor Jessen Vidal
 #   
 <p align="center">      <img src="docs/img/logo_datasquad.png" alt="logo do Data Squad" width="200">      <h2 align="center"> Data Squad </h2></p>  
 
-<p align="center">  | <a href ="#desafio"> Desafio</a>  |  <a href ="#solucao"> Solução</a>  |     <a href ="#backlog"> Backlog do Produto</a>|     <a href ="#sprintbacklog"> Sprint Backlog </a>  |  <a href ="#sprint"> Cronograma de Sprints</a>  |  <a href ="#tecnologias">Tecnologias</a> |  <a href ="#link">Link para Documentação</a>  |   <a href ="#equipe"> Equipe</a> |</p>  
+<p align="center">  | <a href ="#desafio"> Desafio</a>  |  <a href ="#solucao"> Solução</a>  |     <a href ="#backlog"> Backlog do Produto</a>|     <a href ="#sprintbacklog"> Sprint Backlog </a>  |  <a href ="#sprint"> Cronograma de Sprints</a>  |  <a href ="#tecnologias">Tecnologias</a> |  <a href ="#link">Link para Documentação</a>  |   <a href ="#equipe"> Equipe</a> | <a href="#jira"> Jira</a> | <a href="#contribuicao"> Contribuição</a> | | <a href="#videos"> Vídeos</a> |</p>  
 
 > Status do Projeto: Em andamento
+
+* * * 
+
+## 📌 Links úteis <a id="jira"></a> <a id="contribuicao"></a>
+
+- 🎯 **[Board do Jira (público)](https://64a6ab18-5340-4b42-a28d-a1b9b71321e9.hello.atlassian-dev.net/x1/5zYlzyKtY28RUSRspu5yKzKhMzU?contentId=1&contentType=board&token=f7942e6d-341b-4133-8414-03d003d2edca)** — Acompanhamento das issues e da sprint atual.
+- 📖 **[Guia de Contribuição](./docs/CONTRIBUTING.md)** — Padrões de commit, branch, PR e merge.
+
+## 👥 Alocação de Tarefas
+
+> O acompanhamento diário e a distribuição de tarefas podem ser vistos em tempo real no nosso [Board do Jira](https://64a6ab18-5340-4b42-a28d-a1b9b71321e9.hello.atlassian-dev.net/x1/5zYlzyKtY28RUSRspu5yKzKhMzU?contentId=1&contentType=board&token=f7942e6d-341b-4133-8414-03d003d2edca).
+
+| Função | Integrante | Frente / Responsabilidades | Issues em andamento |
+|---|---|---|---|
+| Product Owner | Wanderson Ricardo dos Santos | Backlog, priorização, validação com cliente, Desenvolvimento | [Ver no Jira](https://64a6ab18-5340-4b42-a28d-a1b9b71321e9.hello.atlassian-dev.net/x1/5zYlzyKtY28RUSRspu5yKzKhMzU?contentId=1&contentType=board&token=f7942e6d-341b-4133-8414-03d003d2edca) |
+| Scrum Master | Maria Clara Prado Farkas | Processo, cerimônias, bloqueios, Desenvolvimento | [Ver no Jira](https://64a6ab18-5340-4b42-a28d-a1b9b71321e9.hello.atlassian-dev.net/x1/5zYlzyKtY28RUSRspu5yKzKhMzU?contentId=1&contentType=board&token=f7942e6d-341b-4133-8414-03d003d2edca) |
+| Team Member | Guilhermina Moreira D'Onofrio | Desenvolvimento | [Ver no Jira](https://64a6ab18-5340-4b42-a28d-a1b9b71321e9.hello.atlassian-dev.net/x1/5zYlzyKtY28RUSRspu5yKzKhMzU?contentId=1&contentType=board&token=f7942e6d-341b-4133-8414-03d003d2edca) |
+| Team Member | Rubens Ferreira Venancio | Desenvolvimento | [Ver no Jira](https://64a6ab18-5340-4b42-a28d-a1b9b71321e9.hello.atlassian-dev.net/x1/5zYlzyKtY28RUSRspu5yKzKhMzU?contentId=1&contentType=board&token=f7942e6d-341b-4133-8414-03d003d2edca) |
+
+* * * 
 
 ## Desafio <a id="desafio"></a>
 
@@ -31,7 +51,7 @@ Na etapa de faturamento, a aplicação padroniza o recebimento dos espelhos envi
 | 4    | Alta       | Como médico do FUSEX, quero ter a possibilidade de criar uma pré-guia para um beneficiário durante uma consulta, para que não haja a necessidade de entregar um encaminhamento físico ao beneficiário. | 5          | 2      |  
 | 5    | Alta       | Como funcionário do setor de Guias do FUSEX, quero visualizar e gerenciar os detalhes de uma pré-guia recebida, para que eu possa gerar uma Guia digital com as informações coletadas. | 8          | 2      |  
 | 6    | Média      | Como beneficiário, quero ter a possibilidade de acessar as Guias emitidas em meu perfil de forma totalmente digital, para que eu não precise ir até o FUSEX desnecessariamente. | 4          | 2      |  
-| 7    | Média      | Como beneficiário, quero ter a possbilidade de conseguir a Guia impressa indo até a recepção do FUSEX, para o caso de eu estar sem acesso ao aplicativo. | 4          | 2      |  
+| 7    | Média      | Como beneficiário, quero ter a possibilidade de conseguir a Guia impressa indo até a recepção do FUSEX, para o caso de eu estar sem acesso ao aplicativo. | 4          | 2      |  
 | 8    | Média      | Como um usuário do aplicativo, quero incluir uma assinatura digital em meu perfil após a conclusão do meu cadastro, para que eu possa assinar as Guias com menos gargalos e burocracias. | 7          | 2      |  
 | 9    | Média      | Como beneficiário, quero ter a possibilidade de incluir um dependente em uma pré-guia, para garantir que ele também tenha direito ao FUSEX. |            | 3      |  
 | 10   | Baixa      | Como funcionário do setor de faturas do FUSEX, quero que o espelho enviado pela OCS seja recebido em um formato padronizado, para que os dados possam ser facilmente lidos e coletados pelo sistema. |            | 3      |  
@@ -67,7 +87,7 @@ Na etapa de faturamento, a aplicação padroniza o recebimento dos espelhos envi
 
 ### **Sprint 2: Execução e Planejamento**
 
-* **Capacidade Estimada da Equipe: 33 Story Points.
+* **Capacidade Estimada da Equipe:** 33 Story Points.
 * **Meta da Sprint:** User Stories de rank 3, 4, 5, 6 e 7 (Acompanhamento, criação médica, gestão de pré-guias, acesso a guias e impressão na recepção).
 * **Metas Extras:** User Story de rank 8 (Assinatura digital).
 
@@ -77,7 +97,7 @@ Na etapa de faturamento, a aplicação padroniza o recebimento dos espelhos envi
 | [Criação digital da pré-guia pelo médico](docs/sprint/Sprint-2/US4.md)          | 4    | Alta       | Como médico do FUSEX, quero ter a possibilidade de criar uma pré-guia para um beneficiário durante uma consulta, para que não haja a necessidade de entregar um encaminhamento físico ao beneficiário. | 5          | 2      |
 | [Visualização e gestão de pré-guias](docs/sprint/Sprint-2/US5.md)               | 5    | Alta       | Como funcionário do setor de Guias do FUSEX, quero visualizar e gerenciar os detalhes de uma pré-guia recebida, para que eu possa gerar uma Guia digital com as informações coletadas. | 8          | 2      |
 | [Acesso às Guias no perfil](docs/sprint/Sprint-2/US6.md)                          | 6    | Média      | Como beneficiário, quero ter a possibilidade de acessar as Guias emitidas em meu perfil de forma totalmente digital, para que eu não precise ir até o FUSEX desnecessariamente. | 4          | 2      |
-| [Impressão de Guia na recepção](docs/sprint/Sprint-2/US7.md)                    | 7    | Média      | Como beneficiário, quero ter a possbilidade de conseguir a Guia impressa indo até a recepção do FUSEX, para o caso de eu estar sem acesso ao aplicativo. | 4          | 2      |
+| [Impressão de Guia na recepção](docs/sprint/Sprint-2/US7.md)                    | 7    | Média      | Como beneficiário, quero ter a possibilidade de conseguir a Guia impressa indo até a recepção do FUSEX, para o caso de eu estar sem acesso ao aplicativo. | 4          | 2      |
 | [Inclusão de assinatura digital](docs/sprint/Sprint-2/US8.md)                    | 8    | Média      | Como um usuário do aplicativo, quero incluir uma assinatura digital em meu perfil após a conclusão do meu cadastro, para que eu possa assinar as Guias com menos gargalos e burocracias. | 7          | 2      |
 </details>  
 
@@ -90,13 +110,13 @@ Na etapa de faturamento, a aplicação padroniza o recebimento dos espelhos envi
 Sprint | Previsão | Status       |  
 |------|--------|--------------|  
 |Sprint 01 | 07/09/2026 | Finalizada   |  
-|Sprint 02| 05/10/2026| Em andamento |  
+|Sprint 02| 05/10/2026| Finalizada   |  
 |Sprint 03| 02/11/2026 | Não iniciado |  
 
 * * * 
 ### Definition of Ready (DoR)
 
-Para uma User Sory estar apta ao início de um Sprint, os critérios a seguir devem ser concluídos:
+Para uma User Story estar apta ao início de um Sprint, os critérios a seguir devem ser concluídos:
 
 - Itens mandatórios já identificados.
 - Tem uma clara separação de **instruções, descrição e exemplos**.
@@ -135,12 +155,13 @@ Para uma User Story ser considerada **completa**, os seguintes critérios devem 
 
 ## Link para as documentações <a id="link"></a>
 
-* [Manual de Instalação](docs/manual/instalacao.md)
-* [Manual do Usuário](docs/manual/usuario.md)
+* [Manual de Regras de Negócio](docs/Manual_regras_negocio.md)
+* [Vídeos das funcionalidades (Sprint 2)](docs/videos)
+
 
 * * *  
 
-# Equipe
+# Equipe <a id="equipe"></a>
 
 | Função        | Nome                                    | Github                                                                                                                                              |  
 | ------------- | --------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------- |  
