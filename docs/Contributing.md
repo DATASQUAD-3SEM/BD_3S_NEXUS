@@ -1,152 +1,172 @@
-#  Guia de Contribuição:
+# Guia de Contribuição — DataSquad Nexus
 
-Boas-vindas ao guia de contribuição! Nosso objetivo é manter o histórico do projeto limpo, consistente e fácil de entender para todos os membros do time. 
-Seguir este padrão garante que possamos rastrear rapidamente funcionalidades, correções e alterações de documentação.
+Este guia define o padrão de commits, branches e Pull Requests do projeto.
+Objetivo: manter o histórico limpo, rastreável e integrado ao Jira.
 
-## 1. Padrão de Mensagens de Commit:
-Todas as mensagens de commit devem seguir o padrão simplificado de **Conventional Commits** em Português.
+## Índice
+1. [Mensagens de Commit](#1-mensagens-de-commit)
+2. [Branches](#2-branches)
+3. [Pull Requests](#3-pull-requests)
+4. [Merge Commits (Fusão)](#4-merge-commits-fusão)
+5. [Referência rápida](#5-referência-rápida)
 
-#### Formato Obrigatório:
-> `<tipo>(<escopo opcional>): <descrição concisa>` <br>
-#### Exemplo:
-> `feat(inicio): inserido mensagem de boas-vindas ao usuário`
+---
 
-### 1.1. Tipos Comuns (Mapeamento)
-Use um dos seguintes tipos no início da sua mensagem. Escolha o que melhor descreve o objetivo do seu commit: <br>
-> | Tipo   | Descrição | Exemplo |
-> |------------|--------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------|
-> | `feat`     | Use quando adicionar algo novo ao programa.                                                                        | `feat(inicio): inserido mensagem de boas-vindas ao usuário` | 
-> | `fix`      | Use quando consertar algo que estava errado.                                                                       | `fix(calculadora): corrigido cálculo que mostrava resultado errado` | 
-> | `docs`     | Mudanças ou adições na documentação (README, guias, etc.).                                                         | `docs: adicionado passo a passo para rodar o programa no Visualg` | 
-> | `style`    | Alterações que não afetam o significado do código (formatação, espaços, ponto e vírgula).                          | `style(menu): melhorado nomes das variáveis para ficarem mais claras` | 
-> | `refactor` | Use quando reescrever partes do código para deixá-las mais simples ou melhores, mas sem alterar o resultado final. | `refactor(inicio): reorganizado os itens do menu principal` | 
-> | `test`     | Quando adicionar ou ajustar versões testes (beta,alfa,...)                                                         | `test(calculadora): trocado a formatação de texto para GUI`| 
-> | `chore`    | tarefas de manutenção / configuração que não mudam a lógica do programa                                            | `chore(estrutura): criado pastas src/ e docs/ e organiza arquivos do projeto` | 
+## 1. Mensagens de Commit
 
-### 1.2. Escopo (Opcional)
-O `<escopo>` é opcional, mas altamente recomendado para clareza. Ele especifica a parte do projeto que o commit afeta. <br>
+### 1.1 Formato
 
-#### Sugestões de Escopo:
-- `readme`
-- `docs`
-- `menu`
-- `requisito`
-- `assets`
-- ...
+    <tipo>(<CHAVE-JIRA>-<Ty-FEx>): <descrição no infinitivo>
+    <tipo>(<CHAVE-JIRA>-<Ty-BEx>): <descrição no infinitivo>
 
-#### Exemplo de uso com escopo: 
-> `docs(readme): Ajustado a ordem dos elementos`
+- **`<tipo>`** — obrigatório (ver tabela abaixo).
+- **`(<CHAVE-JIRA>-<Ty-FEx>)`** — Identificador completo da task (Jira + Tela + Task de Frontend ou Backend). Ex.: `(SCRUM-12-T1-FE1)` ou `(SCRUM-15-T2-BE3)`. Se o commit não tiver issue, use o escopo normal, ex: `(readme)` ou omita os parênteses.
+- **`<descrição>`** — no **infinitivo** ("adicionar", "corrigir"), minúscula, sem ponto final.
 
-### 1.3. Descrição Concisa
-A descrição deve ser escrita no **imperativo** (como se você estivesse dando uma ordem ou dizendo o que o commit faz) e **não deve terminar com ponto final.**
+> ⚠️ **Regra da equipe:** descrição no **infinitivo**. Não use particípio ("adicionado") nem 3ª pessoa ("adiciona").
 
-### 1.4. Referenciando o Jira (Issue Key)
+### 1.2 Tipos
 
-Quando o commit estiver relacionado a uma tarefa do Jira, inclua a **chave da issue** (ex: `PROJ-123`) no início da descrição, entre colchetes, após o tipo/escopo.
+| Tipo      | Quando usar                                         | Exemplo |
+|-----------|-----------------------------------------------------|---------|
+| `feat`    | Adiciona algo novo                                  | `feat(SCRUM-12-T1-BE1): adicionar endpoint de pré-guia` |
+| `fix`     | Corrige comportamento errado                        | `fix(SCRUM-15-T2-BE3): corrigir validação de CPF` |
+| `docs`    | Documentação (README, guias)                        | `docs(SCRUM-20-T4-FE2): ajustar textos da tela` |
+| `style`   | Formatação/espaços — **não muda lógica nem nomes**  | `style(SCRUM-30-T1-FE1): remover espaços em branco` |
+| `refactor`| Reorganiza/renomeia **sem mudar comportamento**     | `refactor(SCRUM-22-T3-BE4): renomear variáveis do service` |
+| `test`    | Adiciona/ajusta **testes automatizados**            | `test(SCRUM-12-T1-BE1): cobrir endpoint de PDF com testes` |
+| `chore`   | Manutenção que não altera lógica (pastas, configs)  | `chore(estrutura): criar pastas src/ e docs/` |
 
-#### Formato Obrigatório:
-> `<tipo>[<CHAVE-JIRA>]: <descrição concisa>`
+### 1.3 Exemplos ❌/✅
 
-#### Exemplo:
-> `feat[PROJ-123]: inserido mensagem de boas-vindas ao usuário`
+    ❌ feat: adicionado endpoint de pré-guia
+    ✅ feat(SCRUM-12-T1-BE1): adicionar endpoint de pré-guia
 
-- A chave deve vir sempre entre colchetes `[ ]`, logo antes da descrição.
-- Caso o commit não esteja vinculado a nenhuma issue (ex: pequenos ajustes internos), a chave pode ser omitida.
-- Isso permite que o Jira (e integrações como o Smart Commits) rastreiem automaticamente qual commit resolveu ou avançou determinada tarefa.
+    ❌ style(backend): melhorar nomes das variáveis
+    ✅ refactor(SCRUM-22-T3-BE4): renomear variáveis do service
 
+    ❌ test(frontend): trocar formatação para GUI
+    ✅ style(SCRUM-30-T1-FE1): trocar formatação da saída para GUI
 
-## 2. Padrão de Branching:
-Segue a mesma ideologia do padrão de Commit.
+---
 
-#### Formato Obrigatório:
->`<tipo>/<descrição parte1>-<descrição parte2>`
-#### Exemplo:
-> `docs/organizar-pastas`
+## 2. Branches
 
-- Sempre usar "-" para separar palavaras em Branching <br>
-- Um branch deve ser criado com uma ideia em geral, por exemplo: organizar multiplas pastas do diretorio, 
-  resultaria em um unico branch de nome "docs/organizar-pastas", e dentro dele seriam feitos commits menores, 
-  contendo a real alteração do diretorio, por exemplo: "docs(sprint): Adicionada pasta sprint2/". <br>
-- Se a alteração for uma alteração pequena, em um unico arquivo, como alterar uma virgula de posição, 
-  ela pode ser feita direto naquele branch, sem criar um novo. Por exemplo: "adicionar um 'a' em README.md, 
-  pode ser feito um commit direto no branch 'development' sem criar um novo branch" <br>
-- **Jamais faça alterações diretas no Branch principal (main)**
+### 2.1 Formato
 
-### 2.1. Regras de Proteção de Branch
+A nomenclatura de branch deve seguir a estrutura de Tela (T) e Task (FE/BE):
 
-1. **Não é permitido dar push direto** nem na `main` nem na `develop`.
-2. Qualquer alteração destinada à `develop` deve ser feita **exclusivamente através de Pull Request**.
-3. Você **NÃO** pode aprovar o seu próprio PR e fazer o merge — **é obrigatório** pedir para outra pessoa revisar antes.
-4. O merge do PR **deve** ser feito usando a opção **"Squash and merge"** (ver seção 4).
+    <tipo>/<CHAVE-JIRA>-<Ty-FEx>   (Para Frontend)
+    <tipo>/<CHAVE-JIRA>-<Ty-BEx>   (Para Backend)
 
-### 2.2. Branching vinculado ao Jira
-Quando o branch estiver vinculado a uma issue do Jira, inclua a chave logo após o tipo:
+- **`<tipo>`** — mesmo tipo do commit (ex: `feat`, `fix`, `docs`).
+- **`<CHAVE-JIRA>`** — Chave da issue (ex: `SCRUM-12`).
+- **`Ty`** — Tela número `y` (ex: `T1`, `T2`).
+- **`FEx` ou `BEx`** — Task `x` de Frontend ou Backend (ex: `FE1`, `BE2`).
 
-#### Formato Obrigatório:
-> `<tipo>/<CHAVE-JIRA>-<descrição-curta>`
+- Se o trabalho não tiver issue no Jira (ex: ajustes na documentação), use:
 
-#### Exemplo:
-> `feat/PROJ-123-boas-vindas-usuario`
+      <tipo>/<descrição-em-kebab-case>
 
+**Exemplos:**
 
-## 3. Padrão de Pull Request (PR)
-Ao criar um Pull Request, use o template abaixo para que o revisor saiba o que esperar.
+    feat/SCRUM-12-T1-FE1
+    fix/SCRUM-15-T2-BE3
+    docs/organizar-pastas
 
-#### Título do PR
-O título do Pull Request deve seguir o mesmo padrão do commit principal, incluindo a chave do Jira entre colchetes quando aplicável: 
-> `[<CHAVE-JIRA>] Descricao concisa da ideia geral`
-- Exemplo: "[PROJ-123] Adicionadas novas pastas"
-#### Corpo do PR:
-##### 1. O que foi feito? (Explique de forma simples o que você adicionou, mudou ou corrigiu no código).
-- Exemplo: "Foram adicionadas novas pastas para melhor organizar o diretorio"
+### 2.2 Regras
 
-##### 2. alterações (Diga qual parte do programa foi alterada).
-- Exemplo (todos os subtopicos abaixo formam 1 único exemplo):
-  - Adicionada pasta src/ em docs/
-  - Adicionada pasta logs/ em src/
+- **Nunca** faça push direto em `main` nem em `develop`.
+- Commits pequenos (ex.: ajustar uma vírgula no README) podem ir direto **no seu próprio branch de trabalho**, sem criar outro — mas **nunca** direto em `develop`/`main`.
+- Alterações em `develop` só entram via Pull Request.
+- Você **não pode** aprovar o próprio PR — peça revisão a outra pessoa.
+- **É OBRIGATÓRIO apagar a branch de trabalho (ex: `feat/SCRUM-00-T1-FE1`) logo após a realização do merge na `develop`.**
+- Repositórios do projeto: `BD_3S_BACKEND` e `BD_3S_FRONTEND`.
 
-##### 3. Por que foi feito? (Explique por que essa mudança é necessária ou útil).
-- Exemplo: "O programa anterior resultava em erro"
+---
 
-##### 4. Checklist de Revisão Interna:
-- ✅ Meu código segue o padrão de estilo do projeto.
-- ✅ Meus commits seguem o padrão de mensagens.
-- ✅ Fiz testes locais para validar as alterações.
-- ✅ A documentação (se aplicável) foi atualizada.
+## 3. Pull Requests
 
+### 3.1 Título
 
+O título do Pull Request segue um padrão próprio, focado na identificação rápida da tarefa:
 
-## 4. Padrão de Merge Commits (Fusão)
+    [<CHAVE-JIRA>] <descrição>
+    [NAO-POSSUI-CHAVE-JIRA] <descrição>
 
-Todo PR **deve** ser finalizado com a opção **"Squash and merge"**. Isso combina todos os commits do branch em um único commit na `develop`/`main`, mantendo o histórico limpo e legível.
+- **`[<CHAVE-JIRA>]`** — A chave da issue entre colchetes (ex: `[SCRUM-82]`).
+- **`[NAO-POSSUI-CHAVE-JIRA]`** — Utilize esta tag caso a alteração não esteja atrelada a um card no Jira.
+- **`<descrição>`** — Descrição clara e objetiva com a primeira letra maiúscula.
 
-Ao fazer o squash, edite a mensagem final do commit para seguir o mesmo padrão da seção 1 (tipo, escopo opcional, chave do Jira quando aplicável, descrição concisa):
+**Exemplos:**
 
-#### Formato Obrigatório:
-> `<tipo>(<escopo opcional>): [<CHAVE-JIRA>] <descrição concisa> (#<número_do_pr>)`
+    [SCRUM-82] Devolver Nova pre-guia ao menu do beneficiario
+    [NAO-POSSUI-CHAVE-JIRA] Corrigir perfil de banco errado
 
-#### Exemplo:
-> `feat(inicio): [PROJ-123] inserido mensagem de boas-vindas ao usuário (#42)`
+### 3.2 Corpo (Template)
+
+Ao abrir um Pull Request, copie e cole o template abaixo no campo de descrição e preencha as informações:
+
+    ## O que foi feito?
+    <!-- Descreva a mudança de forma objetiva -->
+
+    ## O que foi alterado?
+    <!-- Liste os pontos principais da alteração -->
+    -
+    -
+
+    ## Por que foi feito?
+    <!-- Motivo, problema resolvido ou link da issue -->
+    Issue no Jira: SCRUM-XX (Tela Y - Task Z)
+
+    ## Checklist
+    - [ ] Meu código segue o padrão do projeto
+    - [ ] Meus commits seguem o padrão de mensagens (`CONTRIBUTING.md`)
+    - [ ] Testei localmente
+    - [ ] Atualizei a documentação (se aplicável)
+
+---
+
+## 4. Merge Commits (Fusão)
+
+Todo Pull Request deve ser finalizado utilizando a opção **"Create a merge commit"**. 
+Isso preserva o histórico de commits individuais da branch de trabalho e gera um commit de merge na `develop`/`main`, garantindo a rastreabilidade exata das alterações.
+
+A mensagem gerada automaticamente pelo GitHub ao realizar o merge deve ser mantida. Não é necessário editá-la.
+
+**Formato Padrão (Gerado pelo GitHub):**
+    Merge pull request #<número_do_pr> from <nome_da_organização>/<nome_da_branch>
+
+**Exemplo:**
+    Merge pull request #66 from DATASQUAD-3SEM/fix/dev-tunnel
 
 ### 4.1. Fluxo de Merge entre Branches
 
-A `main` **somente poderá receber alterações por meio de um merge originado da `develop`**.
+A `main` somente poderá receber alterações por meio de um merge originado da `develop`.
 
 O fluxo obrigatório para integração das alterações é:
+    Branch de trabalho → Pull Request → develop → Pull Request → main
 
-> **Branch de trabalho → Pull Request → `develop` → Pull Request → `main`**
-
-- Alterações desenvolvidas em branches de trabalho devem ser integradas primeiro à `develop` por meio de Pull Request.
+- Alterações em branches de trabalho devem ser integradas primeiro à `develop` via Pull Request.
+- **É OBRIGATÓRIO apagar a branch de trabalho (ex: `feat/SCRUM-00-T1-FE1`) imediatamente após a realização do merge na `develop`.** (No GitHub, utilize o botão "Delete branch" que aparece após o merge).
 - Após a integração na `develop`, as alterações poderão ser encaminhadas para a `main` por meio de um novo Pull Request.
-- **Não é permitido realizar merge diretamente de uma branch de trabalho para a `main`.**
-- **Não é permitido realizar push direto na `main`.**
+- **Não** é permitido realizar merge diretamente de uma branch de trabalho para a `main`.
+- **Não** é permitido realizar push direto na `main`.
 - A `main` deve conter somente alterações que tenham passado previamente pela `develop`.
-- Os merges devem respeitar as regras de revisão e aprovação definidas na seção **2.1. Regras de Proteção de Branch**.
+- Os merges devem respeitar as regras de revisão e aprovação definidas na Seção 2.2 (Regras de Proteção de Branch).
 
-Esse fluxo garante que a `develop` funcione como ambiente de integração das alterações antes que elas sejam incorporadas à `main`, mantendo o histórico e o processo de revisão organizados.
+Esse fluxo garante que a `develop` funcione como ambiente de integração das alterações antes de serem incorporadas à `main`, mantendo o histórico e o processo de revisão organizados. Além disso, cada commit na `develop`/`main` representará uma mudança completa, rastreável ao PR e à issue do Jira que a originou.
 
-**Isso garante que cada commit na `develop`/`main` represente uma única mudança completa, rastreável ao PR e à issue do Jira que a originou.**
-#### Exemplo:
-> `feat(inicio): [PROJ-123] inserido mensagem de boas-vindas ao usuário (#42)`
+---
 
-**Isso garante que cada commit na `develop`/`main` represente uma única mudança completa, rastreável ao PR e à issue do Jira que a originou.**
+## 5. Referência rápida
+
+| Situação              | Padrão |
+|-----------------------|--------|
+| Commit                | `tipo(SCRUM-12-T1-FE1): descrição` |
+| Branch (Frontend)     | `tipo/SCRUM-12-T1-FE1` |
+| Branch (Backend)      | `tipo/SCRUM-12-T1-BE1` |
+| Título do PR          | `[SCRUM-12] Descrição` ou `[NAO-POSSUI-CHAVE-JIRA] Descrição` |
+| Merge                 | "Create a merge commit" (Mensagem padrão do GitHub) |
+| Pós-Merge             | Apagar a branch de trabalho (ex: `feat/SCRUM-00-T1-FE1`) |
+| Descrição (commit)    | infinitivo, minúscula, sem ponto final |
