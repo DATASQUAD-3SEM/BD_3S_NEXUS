@@ -110,7 +110,7 @@ Na etapa de faturamento, a aplicação padroniza o recebimento dos espelhos envi
 Sprint | Previsão | Status       |  
 |------|--------|--------------|  
 |Sprint 01 | 07/09/2026 | Finalizada   |  
-|Sprint 02| 05/10/2026| Em andamento |  
+|Sprint 02| 05/10/2026| Finalizada   |  
 |Sprint 03| 02/11/2026 | Não iniciado |  
 
 * * * 
