@@ -155,8 +155,9 @@ Para uma User Story ser considerada **completa**, os seguintes critérios devem 
 
 ## Link para as documentações <a id="link"></a>
 
-* [Manual de Instalação](docs/manual/instalacao.md)
-* [Manual do Usuário](docs/manual/usuario.md)
+* [Manual de Regras de Negócio](docs/Manual_regras_negocio.md)
+* [Vídeos das funcionalidades (Sprint 2)](docs/videos)
+
 
 * * *  
 
