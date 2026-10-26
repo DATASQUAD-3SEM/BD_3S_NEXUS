@@ -22,8 +22,8 @@ Faculdade de Tecnologia de São José dos Campos - Professor Jessen Vidal
 
 | Função | Integrante | Frente / Responsabilidades | Issues em andamento |
 |---|---|---|---|
-| Product Owner | Wanderson Ricardo dos Santos | Backlog, priorização, validação com cliente | [Ver no Jira](https://64a6ab18-5340-4b42-a28d-a1b9b71321e9.hello.atlassian-dev.net/x1/5zYlzyKtY28RUSRspu5yKzKhMzU?contentId=1&contentType=board&token=f7942e6d-341b-4133-8414-03d003d2edca) |
-| Scrum Master | Maria Clara Prado Farkas | Processo, cerimônias, bloqueios | [Ver no Jira](https://64a6ab18-5340-4b42-a28d-a1b9b71321e9.hello.atlassian-dev.net/x1/5zYlzyKtY28RUSRspu5yKzKhMzU?contentId=1&contentType=board&token=f7942e6d-341b-4133-8414-03d003d2edca) |
+| Product Owner | Wanderson Ricardo dos Santos | Backlog, priorização, validação com cliente, Desenvolvimento | [Ver no Jira](https://64a6ab18-5340-4b42-a28d-a1b9b71321e9.hello.atlassian-dev.net/x1/5zYlzyKtY28RUSRspu5yKzKhMzU?contentId=1&contentType=board&token=f7942e6d-341b-4133-8414-03d003d2edca) |
+| Scrum Master | Maria Clara Prado Farkas | Processo, cerimônias, bloqueios, Desenvolvimento | [Ver no Jira](https://64a6ab18-5340-4b42-a28d-a1b9b71321e9.hello.atlassian-dev.net/x1/5zYlzyKtY28RUSRspu5yKzKhMzU?contentId=1&contentType=board&token=f7942e6d-341b-4133-8414-03d003d2edca) |
 | Team Member | Guilhermina Moreira D'Onofrio | Desenvolvimento | [Ver no Jira](https://64a6ab18-5340-4b42-a28d-a1b9b71321e9.hello.atlassian-dev.net/x1/5zYlzyKtY28RUSRspu5yKzKhMzU?contentId=1&contentType=board&token=f7942e6d-341b-4133-8414-03d003d2edca) |
 | Team Member | Rubens Ferreira Venancio | Desenvolvimento | [Ver no Jira](https://64a6ab18-5340-4b42-a28d-a1b9b71321e9.hello.atlassian-dev.net/x1/5zYlzyKtY28RUSRspu5yKzKhMzU?contentId=1&contentType=board&token=f7942e6d-341b-4133-8414-03d003d2edca) |
 
