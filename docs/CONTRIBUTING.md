@@ -135,7 +135,7 @@ Isso preserva o histórico de commits individuais da branch de trabalho e gera u
 A mensagem gerada automaticamente pelo GitHub ao realizar o merge deve ser mantida. Não é necessário editá-la.
 
 **Formato Padrão (Gerado pelo GitHub):**
-    Merge pull request #<número_do_pr> from <nome_do_repositorio>/<nome_da_branch>
+    Merge pull request #<número_do_pr> from <nome_da_organização>/<nome_da_branch>
 
 **Exemplo:**
     Merge pull request #66 from DATASQUAD-3SEM/fix/dev-tunnel
