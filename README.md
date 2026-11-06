@@ -53,12 +53,12 @@ Na etapa de faturamento, a aplicação padroniza o recebimento dos espelhos envi
 | 6    | Média      | Como beneficiário, quero ter a possibilidade de acessar as Guias emitidas em meu perfil de forma totalmente digital, para que eu não precise ir até o FUSEX desnecessariamente. | 4          | 2      |  
 | 7    | Média      | Como beneficiário, quero ter a possibilidade de conseguir a Guia impressa indo até a recepção do FUSEX, para o caso de eu estar sem acesso ao aplicativo. | 4          | 2      |  
 | 8    | Média      | Como um usuário do aplicativo, quero incluir uma assinatura digital em meu perfil após a conclusão do meu cadastro, para que eu possa assinar as Guias com menos gargalos e burocracias. | 7          | 2      |  
-| 9    | Média      | Como beneficiário, quero ter a possibilidade de enviar e assinar Guias para as OCS de forma totalmente digital, para que eu não corra o risco de perder a Guia física ou de rasurá-la. |            | 3      |  
-| 10   | Média      | Como funcionário do setor de faturas do FUSEX, quero que o espelho enviado pela OCS seja recebido em um formato padronizado, para que os dados possam ser facilmente lidos, coletados e gerenciados pelo sistema. |            | 3      |  
-| 11   | Média      | Como funcionário do setor de rastreabilidade do FUSEX, quero que o sistema compare automaticamente os valores das faturas com os valores presentes nos contratos, para agilizar a lisura das faturas e diminuir chances de erros. |            | 3      |  
-| 12   | Baixa      | Como funcionário do setor de rastreabilidade do FUSEX, quero conferir as comparações automáticas antes de concluir a rastreabilidade de uma fatura, para que eu possa corrigir eventuais erros antes de enviá-los para a auditoria final. |            | 3      |  
-| 13   | Baixa      | Como funcionário do setor de auditoria, quero ter a possibilidade de analisar uma fatura lisurada pelo setor de rastreabilidade, para diminuir as chances de enviar uma fatura errada para o setor de faturas. |            | 3      |
-| 14   | Baixa      | Como chefe do FUSEX, quero ter a possibilidade de atribuir dependentes aos beneficiários do FUSEX, para que eles também possam usufruir do convênio com o FUSEX. |            | 3      |
+| 9    | Média      | Como beneficiário, quero ter a possibilidade de enviar e assinar Guias para as OCS de forma totalmente digital, para que eu não corra o risco de perder a Guia física ou de rasurá-la. | 5          | 3      |  
+| 10   | Média      | Como funcionário do setor de faturas do FUSEX, quero que o espelho enviado pela OCS seja recebido em um formato padronizado, para que os dados possam ser facilmente lidos, coletados e gerenciados pelo sistema. | 5          | 3      |  
+| 11   | Média      | Como funcionário do setor de rastreabilidade do FUSEX, quero que o sistema compare automaticamente os valores das faturas com os valores presentes nos contratos, para agilizar a lisura das faturas e diminuir chances de erros. | 13         | 3      |  
+| 12   | Baixa      | Como funcionário do setor de rastreabilidade do FUSEX, quero conferir as comparações automáticas antes de concluir a rastreabilidade de uma fatura, para que eu possa corrigir eventuais erros antes de enviá-los para a auditoria final. | 13         | 3      |  
+| 13   | Baixa      | Como funcionário do setor de auditoria, quero ter a possibilidade de analisar uma fatura lisurada pelo setor de rastreabilidade, para diminuir as chances de enviar uma fatura errada para o setor de faturas. | 13         | 3      |
+| 14   | Baixa      | Como chefe do FUSEX, quero ter a possibilidade de atribuir dependentes aos beneficiários do FUSEX, para que eles também possam usufruir do convênio com o FUSEX. | 5          | 3      |
 * * *  
 
 ## Sprint Backlog 📅 <a id="sprintbacklog"></a>
@@ -99,6 +99,29 @@ Na etapa de faturamento, a aplicação padroniza o recebimento dos espelhos envi
 | [Acesso às Guias no perfil](docs/sprint/Sprint-2/US6.md)                          | 6    | Média      | Como beneficiário, quero ter a possibilidade de acessar as Guias emitidas em meu perfil de forma totalmente digital, para que eu não precise ir até o FUSEX desnecessariamente. | 4          | 2      |
 | [Impressão de Guia na recepção](docs/sprint/Sprint-2/US7.md)                    | 7    | Média      | Como beneficiário, quero ter a possibilidade de conseguir a Guia impressa indo até a recepção do FUSEX, para o caso de eu estar sem acesso ao aplicativo. | 4          | 2      |
 | [Inclusão de assinatura digital](docs/sprint/Sprint-2/US8.md)                    | 8    | Média      | Como um usuário do aplicativo, quero incluir uma assinatura digital em meu perfil após a conclusão do meu cadastro, para que eu possa assinar as Guias com menos gargalos e burocracias. | 7          | 2      |
+</details>  
+
+<br>  
+
+* * *  
+
+<details>  
+  <summary><b>Sprint 3</b></summary>  
+
+### **Sprint 3: Execução e Planejamento**
+
+* **Capacidade Estimada da Equipe:** 54 Story Points.
+* **Meta da Sprint:** User Stories de rank 9, 10, 11, 12 e 13 (Assinatura/envio de Guias pelo beneficiário, criação/envio de espelhos e rastreabilidade de faturas).
+* **Metas Extras:** User Story de rank 14 (Dependentes).
+
+| Link                                                                            | rank | Prioridade | User Story | Estimativa | Sprint |  
+|---------------------------------------------------------------------------------|------|------------| --------------------------------------------------------------------------------------------------------------------------------------------- |------------|--------|  
+| [Assinar Guias](docs/sprint/Sprint-3/US9.md)                                    | 9    | Média      | Como beneficiário, quero ter a possibilidade de enviar e assinar Guias para as OCS de forma totalmente digital, para que eu não corra o risco de perder a Guia física ou de rasurá-la. | 5          | 2      |  
+| [Criação e envio do espelho padronizado pela OCS](docs/sprint/Sprint-3/US10.md) | 10   | Média      | Como funcionário do setor de faturas do FUSEX, quero que o espelho enviado pela OCS seja recebido em um formato padronizado, para que os dados possam ser facilmente lidos, coletados e gerenciados pelo sistema. | 5          | 2      |
+| [Comparações automáticas de preços da fatura](docs/sprint/Sprint-3/US11.md)     | 11   | Média      | Como funcionário do setor de rastreabilidade do FUSEX, quero que o sistema compare automaticamente os valores das faturas com os valores presentes nos contratos, para agilizar a lisura das faturas e diminuir chances de erros. | 13         | 2      |
+| [Conferência de comparações](docs/sprint/Sprint-3/US12.md)                      | 12   | Baixa      | Como funcionário do setor de rastreabilidade do FUSEX, quero conferir as comparações automáticas antes de concluir a rastreabilidade de uma fatura, para que eu possa corrigir eventuais erros antes de enviá-los para a auditoria final. | 13         | 2      |
+| [Auditoria final da fatura](docs/sprint/Sprint-3/US13.md)                       | 13   | Baixa      | Como funcionário do setor de auditoria, quero ter a possibilidade de analisar uma fatura lisurada pelo setor de rastreabilidade, para diminuir as chances de enviar uma fatura errada para o setor de faturas. | 13         | 2      |
+| [Atribuição de dependentes](docs/sprint/Sprint-3/US14.md)                       | 14   | Baixa      | Como chefe do FUSEX, quero ter a possibilidade de atribuir dependentes aos beneficiários do FUSEX, para que eles também possam usufruir do convênio com o FUSEX. | 5          | 2      |
 </details>  
 
 <br>  
