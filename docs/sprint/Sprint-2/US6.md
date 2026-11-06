@@ -1,22 +1,24 @@
-# Inclusão de assinatura digital no perfil
+# Acesso às Guias no perfil
 ## Resumo
-Como um usuário do aplicativo, quero incluir uma assinatura digital em meu perfil após a conclusão do meu cadastro, para que eu possa assinar as Guias com menos gargalos e burocracias.
-## Sobre a assinatura digital:
-A assinatura digital (`assinatura_url`) é o recurso que permite aos perfis habilitados (Beneficiários, Médicos do FUSEX e Chefe do FUSEX) assinar documentos eletronicamente sem a necessidade de deslocamento físico ou papéis. Contas de setor (`SETOR_GUIAS` e `RECEPCAO`) não possuem assinatura digital. O cadastro da assinatura é realizado pelo próprio usuário em sua área de perfil após o primeiro acesso.
+Como beneficiário, quero ter a possibilidade de acessar as Guias emitidas em meu perfil de forma totalmente digital, para que eu não precise ir até o FUSEX desnecessariamente.
+## Sobre o acesso às Guias:
+A Guia é emitida fora do Nexus (no SIRE) e o PDF é anexado pelo setor de Guias. Depois que a Guia recebe as duas assinaturas obrigatórias (médico e chefe do FUSEX), a pré-guia passa a ter status **Concluída**. Só nesse status o PDF fica disponível ao beneficiário. O acompanhamento acontece na tela **Minhas pré-guias**, no card de cada pré-guia.
 ## Detalhamento do processo:
-1. O usuário realiza seu cadastro ou login inicial no Nexus.
-2. Na seção de gerenciamento de perfil, o usuário acessa a opção de cadastrar ou atualizar sua assinatura digital.
-3. O usuário insere sua assinatura (por meio de desenho na tela, upload de imagem ou mecanismo padrão definido pela equipe).
-4. O sistema valida e armazena o arquivo/URL da assinatura vinculada ao cadastro do usuário (`assinatura_url`), deixando-a pronta para uso nos fluxos de validação de Guias.
+1. O beneficiário loga no aplicativo e acessa **Minhas pré-guias**.
+2. Cada pré-guia aparece em um card com número, OCS, data de criação e status.
+3. Quando a pré-guia está **Concluída**, o card mostra o número da Guia, a validade e a informação de que ela foi assinada pelo médico e pelo chefe do FUSEX.
+4. No card, o beneficiário escolhe uma das ações: **Baixar Guia (PDF)**, **Visualizar** (abre o PDF em nova aba) ou **Imprimir**.
+5. O sistema entrega o PDF da Guia assinada.
 ## Critérios de aceitação:
-- Certifique-se de que os usuários elegíveis (Beneficiários, Médicos e Chefe do FUSEX) consigam cadastrar e atualizar sua assinatura digital (`assinatura_url`) diretamente em seu perfil.
-- Certifique-se de que contas de setor (`SETOR_GUIAS` e `RECEPCAO`) não apresentem campos ou permissões de assinatura digital.
-- Certifique-se de que o sistema armazene corretamente a assinatura e a utilize nos módulos de assinatura de guias quando acionada pelo usuário.
+- Certifique-se de que uma pré-guia com status *Concluída* mostre no card o número da Guia e a data de validade.
+- Certifique-se de que o beneficiário consiga baixar o PDF da Guia pelo botão **Baixar Guia (PDF)**.
+- Certifique-se de que o beneficiário consiga visualizar o PDF em nova aba, sem baixá-lo.
+- Certifique-se de que o PDF não fique disponível enquanto a Guia não tiver as duas assinaturas.
+- Certifique-se de que o beneficiário só acesse o PDF das próprias pré-guias.
 
 ## Definition of Ready (DoR)
-- Itens mandatórios já identificados: campo `assinatura_url` no modelo de usuário, restrição de perfis aptos versus contas de setor, e tela de gerenciamento de perfil.
-- Clara separação entre instruções, descrição e exemplos (ver seções "Sobre a assinatura digital" e "Detalhamento do processo").
+- Itens mandatórios já identificados: card de pré-guia *Concluída* com número e validade da Guia, download e visualização do PDF, e bloqueio do PDF sem as duas assinaturas.
+- Clara separação entre instruções, descrição e exemplos (ver seções "Sobre o acesso às Guias" e "Detalhamento do processo").
 - Critérios de aceitação e regras de negócio definidos.
 - Prioridade definida: **Média**.
 - Esforço definido pela equipe: 4
-
