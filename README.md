@@ -57,7 +57,7 @@ Na etapa de faturamento, a aplicação padroniza o recebimento dos espelhos envi
 | 10   | Média      | Como funcionário do setor de faturas do FUSEX, quero que o espelho enviado pela OCS seja recebido em um formato padronizado, para que os dados possam ser facilmente lidos, coletados e gerenciados pelo sistema. | 5          | 3      |  
 | 11   | Média      | Como funcionário do setor de rastreabilidade do FUSEX, quero que o sistema compare automaticamente os valores das faturas com os valores presentes nos contratos, para agilizar a lisura das faturas e diminuir chances de erros. | 13         | 3      |  
 | 12   | Baixa      | Como funcionário do setor de rastreabilidade do FUSEX, quero conferir as comparações automáticas antes de concluir a rastreabilidade de uma fatura, para que eu possa corrigir eventuais erros antes de enviá-los para a auditoria final. | 13         | 3      |  
-| 13   | Baixa      | Como funcionário do setor de auditoria, quero ter a possibilidade de analisar uma fatura lisurada pelo setor de rastreabilidade, para diminuir as chances de enviar uma fatura errada para o setor de faturas. | 13         | 3      |
+| 13   | Baixa      | Como funcionário do setor de auditoria, quero ter a possibilidade de analisar e consultar uma fatura lisurada pelo setor de rastreabilidade, para que eu possa acompanhar o trâmite das faturas de forma mais organizada e ágil. | 13         | 3      |
 | 14   | Baixa      | Como chefe do FUSEX, quero ter a possibilidade de atribuir dependentes aos beneficiários do FUSEX, para que eles também possam usufruir do convênio com o FUSEX. | 5          | 3      |
 * * *  
 
@@ -120,7 +120,7 @@ Na etapa de faturamento, a aplicação padroniza o recebimento dos espelhos envi
 | [Criação e envio do espelho padronizado pela OCS](docs/sprint/Sprint-3/US10.md) | 10   | Média      | Como funcionário do setor de faturas do FUSEX, quero que o espelho enviado pela OCS seja recebido em um formato padronizado, para que os dados possam ser facilmente lidos, coletados e gerenciados pelo sistema. | 5          | 2      |
 | [Comparações automáticas de preços da fatura](docs/sprint/Sprint-3/US11.md)     | 11   | Média      | Como funcionário do setor de rastreabilidade do FUSEX, quero que o sistema compare automaticamente os valores das faturas com os valores presentes nos contratos, para agilizar a lisura das faturas e diminuir chances de erros. | 13         | 2      |
 | [Conferência de comparações](docs/sprint/Sprint-3/US12.md)                      | 12   | Baixa      | Como funcionário do setor de rastreabilidade do FUSEX, quero conferir as comparações automáticas antes de concluir a rastreabilidade de uma fatura, para que eu possa corrigir eventuais erros antes de enviá-los para a auditoria final. | 13         | 2      |
-| [Auditoria final da fatura](docs/sprint/Sprint-3/US13.md)                       | 13   | Baixa      | Como funcionário do setor de auditoria, quero ter a possibilidade de analisar uma fatura lisurada pelo setor de rastreabilidade, para diminuir as chances de enviar uma fatura errada para o setor de faturas. | 13         | 2      |
+| [Auditoria final da fatura](docs/sprint/Sprint-3/US13.md)                       | 13   | Baixa      | Como funcionário do setor de auditoria, quero ter a possibilidade de analisar e consultar uma fatura lisurada pelo setor de rastreabilidade, para que eu possa acompanhar o trâmite das faturas de forma mais organizada e ágil. | 13         | 2      |
 | [Atribuição de dependentes](docs/sprint/Sprint-3/US14.md)                       | 14   | Baixa      | Como chefe do FUSEX, quero ter a possibilidade de atribuir dependentes aos beneficiários do FUSEX, para que eles também possam usufruir do convênio com o FUSEX. | 5          | 2      |
 </details>  
 
@@ -178,9 +178,10 @@ Para uma User Story ser considerada **completa**, os seguintes critérios devem 
 
 ## Link para as documentações <a id="link"></a>
 
+* [Manual de Instalação](docs/manuais/Manual_Instalacao.md)
+* [Manual do Usuário](docs/manuais/Manual_Usuario.md)
 * [Manual de Regras de Negócio](docs/Manual_regras_negocio.md)
-* [Vídeos das funcionalidades (Sprint 2)](docs/videos)
-
+* [Vídeos das funcionalidades](docs/videos)
 
 * * *  
 
