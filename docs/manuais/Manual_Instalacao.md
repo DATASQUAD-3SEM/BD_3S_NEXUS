@@ -411,7 +411,7 @@ Use uma das contas de exemplo abaixo. **A senha de todas é `senha123`.**
 |---|---|
 | Beneficiário | `52998224725` |
 | Médico | `11144477735` |
-| Responsável legal (de dependente menor) | `41282945067` |
+| Responsável legal (de dependente menor) | `41282945009` |
 | Chefe da FUSEX | `chefe.fusex` |
 | Setor de Guias | `setor.guias` |
 | Recepção | `recepcao` |
@@ -501,6 +501,10 @@ O MySQL não está rodando:
 
 O passo 5 não foi feito (ou foi feito com erro). Refaça o [passo 5](#5-criar-o-banco-de-dados) e inicie o Backend novamente.
 
+### O Backend mostra "Migration checksum mismatch" (geralmente depois de atualizar o sistema)
+
+A estrutura do banco que você já tem ficou diferente da que a nova versão do sistema espera. A solução é apagar e recriar o banco, seguindo o [passo 11](#11-apagar-tudo-e-recomeçar). **Isso apaga todos os dados** (os dados de exemplo são recriados na próxima inicialização). Avise a equipe de desenvolvimento, pois pode indicar que uma alteração antiga do banco foi editada.
+
 ### O Backend mostra "Port 8080 was already in use"
 
 Outro programa está usando a porta 8080. Pode ser outra janela do Backend aberta. Feche todos os terminais, abra um novo e tente de novo. Se persistir, reinicie o computador.
@@ -537,4 +541,4 @@ Não há como recuperá-la. Será necessário desinstalar e reinstalar o MySQL (
 
 ---
 
-> Em caso de dúvidas, abra uma **Issue** no repositório do projeto: https://github.com/DATASQUAD-3SEM/BD_3S_NEXUS/issues
+
