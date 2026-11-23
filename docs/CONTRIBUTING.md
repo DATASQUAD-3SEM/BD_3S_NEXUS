@@ -95,7 +95,6 @@ O título do Pull Request segue um padrão próprio, focado na identificação r
     [NAO-POSSUI-CHAVE-JIRA] <descrição>
 
 - **`[<CHAVE-JIRA>]`** — A chave da issue entre colchetes (ex: `[SCRUM-82]`).
-- **`[NAO-POSSUI-CHAVE-JIRA]`** — Utilize esta tag caso a alteração não esteja atrelada a um card no Jira.
 - **`<descrição>`** — Descrição clara e objetiva com a primeira letra maiúscula.
 
 **Exemplos:**
