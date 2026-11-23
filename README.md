@@ -7,7 +7,7 @@ Faculdade de Tecnologia de São José dos Campos - Professor Jessen Vidal
 
 <p align="center">  | <a href ="#desafio"> Desafio</a>  |  <a href ="#solucao"> Solução</a>  |     <a href ="#backlog"> Backlog do Produto</a>|     <a href ="#sprintbacklog"> Sprint Backlog </a>  |  <a href ="#sprint"> Cronograma de Sprints</a>  |  <a href ="#tecnologias">Tecnologias</a> |  <a href ="#link">Link para Documentação</a>  |   <a href ="#equipe"> Equipe</a> | <a href="#jira"> Jira</a> | <a href="#contribuicao"> Contribuição</a> | | <a href="#videos"> Vídeos</a> |</p>  
 
-> Status do Projeto: Em andamento
+> Status do Projeto: Concluído
 
 * * * 
 
@@ -134,7 +134,7 @@ Sprint | Previsão | Status       |
 |------|--------|--------------|  
 |Sprint 01 | 07/09/2026 | Finalizada   |  
 |Sprint 02| 05/10/2026| Finalizada   |  
-|Sprint 03| 02/11/2026 | Em andamento |  
+|Sprint 03| 02/11/2026 | Finalizada |  
 
 * * * 
 ### Definition of Ready (DoR)
