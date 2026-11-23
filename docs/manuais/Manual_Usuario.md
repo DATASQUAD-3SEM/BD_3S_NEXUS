@@ -13,27 +13,27 @@
 3. [Acesso ao Sistema](#3-acesso-ao-sistema)
 4. [Como a tela é organizada (vale para todos os perfis)](#4-como-a-tela-é-organizada-vale-para-todos-os-perfis)
 5. [Módulo do Beneficiário, do Dependente Maior e do Responsável Legal](#5-módulo-do-beneficiário-do-dependente-maior-e-do-responsável-legal)
-   * 5.1 [Início](#51-início)
-   * 5.2 [Nova pré-guia](#52-nova-pré-guia)
-   * 5.3 [Minhas pré-guias](#53-minhas-pré-guias)
-   * 5.4 [Corrigir uma pré-guia em Atenção](#54-corrigir-uma-pré-guia-em-atenção)
-   * 5.5 [Minhas guias](#55-minhas-guias)
-   * 5.6 [Minhas informações](#56-minhas-informações)
+    * 5.1 [Início](#51-início)
+    * 5.2 [Nova pré-guia](#52-nova-pré-guia)
+    * 5.3 [Minhas pré-guias](#53-minhas-pré-guias)
+    * 5.4 [Corrigir uma pré-guia em Atenção](#54-corrigir-uma-pré-guia-em-atenção)
+    * 5.5 [Minhas guias](#55-minhas-guias)
+    * 5.6 [Minhas informações](#56-minhas-informações)
 6. [Módulo do Médico do FUSEX](#6-módulo-do-médico-do-fusex)
-   * 6.1 [Início](#61-início)
-   * 6.2 [Nova pré-guia](#62-nova-pré-guia-médico)
-   * 6.3 [Corrigir pré-guias](#63-corrigir-pré-guias)
-   * 6.4 [Guias para assinar](#64-guias-para-assinar-médico)
-   * 6.5 [Minhas informações](#65-minhas-informações-médico)
+    * 6.1 [Início](#61-início)
+    * 6.2 [Nova pré-guia](#62-nova-pré-guia-médico)
+    * 6.3 [Corrigir pré-guias](#63-corrigir-pré-guias)
+    * 6.4 [Guias para assinar](#64-guias-para-assinar-médico)
+    * 6.5 [Minhas informações](#65-minhas-informações-médico)
 7. [Módulo do Chefe do FUSEX](#7-módulo-do-chefe-do-fusex)
-   * 7.1 [Guias para assinar](#71-guias-para-assinar-chefe)
-   * 7.2 [Beneficiários](#72-beneficiários)
-   * 7.3 [Dependentes de um titular](#73-dependentes-de-um-titular)
-   * 7.4 [Médicos](#74-médicos)
-   * 7.5 [Minhas informações](#75-minhas-informações-chefe)
+    * 7.1 [Guias para assinar](#71-guias-para-assinar-chefe)
+    * 7.2 [Beneficiários](#72-beneficiários)
+    * 7.3 [Dependentes de um titular](#73-dependentes-de-um-titular)
+    * 7.4 [Médicos](#74-médicos)
+    * 7.5 [Minhas informações](#75-minhas-informações-chefe)
 8. [Módulo do Setor de Guias](#8-módulo-do-setor-de-guias)
-   * 8.1 [Fila de pré-guias](#81-fila-de-pré-guias)
-   * 8.2 [Tela da pré-guia](#82-tela-da-pré-guia)
+    * 8.1 [Fila de pré-guias](#81-fila-de-pré-guias)
+    * 8.2 [Tela da pré-guia](#82-tela-da-pré-guia)
 9. [Módulo da Recepção](#9-módulo-da-recepção)
 10. [Módulo da OCS](#10-módulo-da-ocs)
     * 10.1 [Guias recebidas](#101-guias-recebidas)
@@ -197,7 +197,7 @@ Na versão de desenvolvimento, abaixo do login aparece o cartão **Acesso rápid
 |---|---|---|
 | Beneficiário | `52998224725` | `senha123` |
 | Médico | `11144477735` | `senha123` |
-| Responsável legal | `41282945067` | `senha123` |
+| Responsável legal | `41282945009` | `senha123` |
 | Chefe do FUSEX | `chefe.fusex` | `senha123` |
 | Setor de Guias | `setor.guias` | `senha123` |
 | Recepção | `recepcao` | `senha123` |
@@ -267,7 +267,7 @@ Estes três perfis usam **o mesmo menu**:
 
 | Item do menu | Para que serve |
 |---|---|
-| **Início** | Tela inicial (espaço reservado). |
+| **Início** | Tela inicial, com o resumo do que precisa da sua atenção e atalhos. |
 | **Nova pré-guia** | Criar um pedido de Guia. |
 | **Minhas pré-guias** | Acompanhar os pedidos e corrigir os devolvidos. |
 | **Minhas guias** | Ver as Guias prontas, enviá-las à OCS e assinar as sessões. |
@@ -281,7 +281,16 @@ Estes três perfis usam **o mesmo menu**:
 
 ### 5.1 Início
 
-Tela inicial. Neste momento é um **espaço reservado** ("Tela não desenhada") e ainda não tem funções. Use o menu lateral para navegar.
+Tela inicial do beneficiário, do dependente maior e do responsável legal. Ela o cumprimenta pelo primeiro nome ("Olá, [nome]"), mostra uma frase conforme o seu perfil e reúne o que precisa da sua atenção.
+
+| Bloco | O que mostra |
+|---|---|
+| **Nova pré-guia** (botão no alto) | Atalho para criar um pedido de Guia. |
+| **Alerta de assinatura** | Aparece somente quando há sessões esperando a sua assinatura e você ainda não cadastrou a sua. O botão **Cadastrar assinatura** leva a **Minhas informações**. |
+| **O que precisa da sua atenção** | Quatro cartões com números: **Precisam de correção** (pré-guias em Atenção), **Com o setor de Guias** (pré-guias Pendentes ou Em análise), **Prontas para enviar à OCS** (Guias Não enviadas) e **Sessões para assinar**. Cada cartão com pendência tem um botão que leva à tela certa (**Ver pré-guias**, **Acompanhar**, **Enviar guias**, **Assinar sessões**). Sem pendência, o cartão fica esmaecido com "Nada pendente". Se um número não carregar, o cartão mostra "Não foi possível carregar." |
+| **Atalhos** | **Nova pré-guia**, **Minhas pré-guias**, **Minhas guias** e **Minhas informações**. |
+
+> Os números vêm das mesmas listas de **Minhas pré-guias** e **Minhas guias**.
 
 ### 5.2 Nova pré-guia
 
@@ -416,7 +425,7 @@ A tela tem os seguintes blocos.
 |---|---|
 | **Meus dados / Dados pessoais** | Nome, CPF, Prec CP, Data de nascimento e Faixa etária (somente leitura). Para alterar, procure o Chefe do FUSEX. |
 | **Contato → Telefone** | Campo com máscara `(00) 00000-0000`. Edite e clique em **Salvar telefone**. Mensagem: "Telefone salvo com sucesso." |
-| **Alterar senha** | Campos **Senha atual**, **Nova senha** (mínimo de **8 caracteres**) e **Confirmar nova senha**, e o botão **Alterar senha**. A nova senha deve ser diferente da atual e as duas novas devem coincidir. |
+| **Alterar senha** | Campos **Senha atual**, **Nova senha** (mínimo de **8 caracteres**) e **Confirmar nova senha**, e o botão **Alterar senha**. A nova senha deve ser diferente da atual e as duas novas devem coincidir. Depois de **5 erros seguidos** na senha atual, a alteração fica bloqueada por **15 minutos**. |
 | **Assinatura digital** | Veja abaixo. |
 | **Dependentes** | Lista de dependentes cadastrados pelo chefe. Cada cartão tem o botão **Criar pré-guia** (leva à Nova pré-guia já com o menor escolhido). Dependentes maiores mostram "Maior de idade, com conta própria: cria as próprias pré-guias". Para incluir ou alterar um dependente, procure o chefe. |
 
@@ -447,7 +456,7 @@ O médico entra com o **CPF**. Na barra superior aparece "[patente] [nome] · M�
 
 | Item do menu | Para que serve |
 |---|---|
-| **Início** | Tela inicial (espaço reservado, sem funções por enquanto). |
+| **Início** | Tela inicial, com as Guias para assinar, as pré-guias para corrigir e atalhos. |
 | **Nova pré-guia** | Criar pré-guia durante a consulta. |
 | **Corrigir pré-guias** | Corrigir as pré-guias que você criou e que o setor devolveu. |
 | **Guias para assinar** | Assinar Guias. |
@@ -455,7 +464,14 @@ O médico entra com o **CPF**. Na barra superior aparece "[patente] [nome] · M�
 
 ### 6.1 Início
 
-Espaço reservado ("Tela não desenhada"). Use o menu lateral.
+Mostra "Olá, [patente] [nome]" e o seu CRM, além do botão **Nova pré-guia**. Em **O que precisa da sua atenção** há dois cartões com números:
+
+| Cartão | O que conta | Botão |
+|---|---|---|
+| **Guias para assinar** | Guias que esperam a sua assinatura. | **Assinar guias** |
+| **Pré-guias para corrigir** | Pré-guias criadas por você e devolvidas pelo setor de Guias. | **Corrigir** |
+
+Sem pendência, o cartão fica esmaecido com "Nada pendente". Em **Atalhos** há **Nova pré-guia** e **Minhas informações**.
 
 ### 6.2 Nova pré-guia (médico)
 
@@ -463,7 +479,7 @@ Aqui o médico **não anexa encaminhamento**: ele informa os exames. A tela tem 
 
 | Bloco | O que faz |
 |---|---|
-| **Médico solicitante** | Mostra Nome, Patente e Prec CP, **preenchidos automaticamente** com o seu perfil. Não é editável. |
+| **Médico solicitante** | Mostra Nome, Patente, CRM, CPF e Prec CP, **preenchidos automaticamente** com o seu perfil. Não é editável. |
 | **Beneficiário** | Digite o **Prec CP** do paciente e clique em **Buscar**. Se encontrar, mostra Nome, Faixa etária e Telefone. Se for um dependente, mostra também **Paciente**, **Dependente (vínculo)** e **Titular**, com o Prec CP do titular. Mensagens: "Beneficiário não encontrado." (confira o número) e "Não foi possível buscar o beneficiário…" com **Tentar novamente**. |
 | **OCS** | **Buscar OCS** por nome, contrato ou tipo. Selecione a OCS na lista. Sem escolha, aparece "Nenhuma OCS selecionada. Escolha uma das opções da lista." |
 | **Exames e procedimentos** | **Buscar por nome ou código TUSS** (digite ao menos **2 caracteres**). Cada resultado mostra o nome e o "Código TUSS". Clique para incluir; procedimentos já incluídos aparecem como **Já incluído**. A tabela **Código TUSS / Procedimento** lista o que foi escolhido, com opção de remover. É preciso incluir **ao menos um exame** ("Inclua ao menos um exame."). |
@@ -502,7 +518,7 @@ Veja a descrição completa em [7.1](#71-guias-para-assinar-chefe): o funcioname
 
 | Bloco | O que contém |
 |---|---|
-| **Dados profissionais** | Nome, Patente, CPF (login) e Prec CP, somente leitura. Para alterar, procure o Chefe do FUSEX. |
+| **Dados profissionais** | Nome, Patente, CPF (login), Prec CP e CRM, somente leitura. Para alterar, procure o Chefe do FUSEX. |
 | **Alterar senha** | **Senha atual**, **Nova senha** (mínimo 8 caracteres, diferente da atual) e **Confirmar nova senha**. Botão **Alterar senha**. |
 | **Assinatura digital** | Desenhe ou envie imagem PNG/JPG e clique em **Salvar assinatura** (como em [5.6](#56-minhas-informações)). |
 
@@ -552,8 +568,9 @@ Mostra apenas os **titulares**; os dependentes ficam dentro do titular ao qual p
 | **Nome** | Nome completo. Obrigatório. |
 | **CPF (será o login)** | CPF válido, com 11 dígitos. Será o login do beneficiário. |
 | **Prec CP** | Número do cartão. |
-| **Data de nascimento** | Data. A **Faixa etária** e a idade são calculadas e mostradas ao lado. |
+| **Data de nascimento** | Data. |
 | **Telefone** | Com DDD, por exemplo `(11) 98765-4321`. |
+| **Faixa etária** | (só na edição) Calculada a partir da data de nascimento e mostrada com a idade. Somente leitura. |
 | **Situação** | (só na edição) **Ativo** ou **Inativo**. |
 | **Senha inicial** | (só no cadastro) Senha de primeiro acesso. Na edição, o campo vira **Nova senha (deixe em branco para manter)**. |
 
@@ -624,7 +641,8 @@ Funciona como Beneficiários, mas para os médicos.
 | **Nome** | Nome do médico. |
 | **Patente** | Patente (por exemplo, Capitão, Major). |
 | **CPF (será o login)** | CPF do médico. |
-| **Prec CP** | Número do cartão. |
+| **Prec CP** | Número do cartão (11 dígitos). |
+| **CRM** | Número e estado (UF), por exemplo `123456-SP`. Obrigatório. |
 | **Situação** | (edição) **Ativo** ou **Inativo**. |
 | **Senha inicial** | No cadastro. Na edição: **Nova senha (deixe em branco para manter)**. |
 
@@ -632,9 +650,9 @@ Funciona como Beneficiários, mas para os médicos.
 |---|---|
 | **Cadastrar médico / Salvar alterações / Cancelar** | Igual aos beneficiários. |
 
-**Lista de médicos:** **Buscar por nome, CPF, Prec CP ou CRM**, filtro **Ativos / Inativos / Todos**, colunas Nome, CPF (login), Prec CP, Situação e Ações. **Editar**, **Desativar** (bloqueia o acesso **e a assinatura**, mas mantém o histórico) e **Reativar**. Há paginação.
+**Lista de médicos:** **Buscar por nome, CPF, Prec CP ou CRM**, filtro **Ativos / Inativos / Todos**, colunas Nome, CPF (login), Prec CP, CRM, Situação e Ações. **Editar**, **Desativar** (bloqueia o acesso **e a assinatura**, mas mantém o histórico) e **Reativar**. Há paginação.
 
-Se o CPF já existir, o erro **"CPF já cadastrado"** aparece no campo CPF.
+Se o CPF, o Prec CP ou o CRM já existirem, aparece um erro como **"CPF já cadastrado"** no campo correspondente.
 
 ### 7.5 Minhas informações (chefe)
 
@@ -657,7 +675,7 @@ Lista todas as pré-guias para análise.
 |---|---|
 | **Buscar por beneficiário ou Prec CP** | Filtra a lista. |
 | **Filtrar por status** | **Todos os status**, Pendente, Em análise, Atenção ou Concluída. |
-| **Colunas** | Número, Beneficiário, Origem (criada pelo beneficiário ou pelo médico), Criada em, Status e Ações. |
+| **Colunas** | Número, Beneficiário, OCS, Origem (criada pelo beneficiário ou pelo médico), Criada em, Status e Ações. |
 | **Abrir** | Abre a tela da pré-guia. Fica em destaque nas que pedem ação. |
 | **Anterior / Próxima** | Paginação. |
 
@@ -712,7 +730,7 @@ Conta de setor. Menu: **Guias para impressão**. Serve para quem **não tem aces
 
 | Elemento | O que faz |
 |---|---|
-| **Nome do beneficiário, Prec CP ou número da Guia** | Campo de busca. Digite **ao menos alguns caracteres** (o sistema avisa o mínimo). Antes de digitar, aparece "Digite para buscar uma Guia". |
+| **Nome do beneficiário, Prec CP ou número da Guia** | Campo de busca. Digite **ao menos 3 caracteres** (o sistema avisa o mínimo). Antes de digitar, aparece "Digite para buscar uma Guia". |
 | **Resultados** | Tabela com **Guia**, **Beneficiário**, **Prec CP**, **OCS**, **Válida até** e Ações. |
 | **Visualizar** | Abre o PDF em uma janela, com o botão **Baixar PDF**. Feche com **Esc** ou pelo botão de fechar. |
 | **Imprimir** | Abre a impressão do PDF direto da lista. |
@@ -809,7 +827,7 @@ Lista os espelhos já enviados com número, período e valor, e o botão **Ver d
 
 ### 10.4 Glosas Recebidas
 
-Aqui a OCS vê as **faturas com glosa**, aguardando a sua decisão. O texto informa o prazo de **3 dias úteis**: se contestar alguma guia, ela volta para a rastreabilidade; **passado o prazo sem decisão, a fatura segue para a auditoria mesmo assim.**
+Aqui a OCS vê as **faturas com glosa**, aguardando a sua decisão. O texto informa o prazo de **3 dias úteis** (sábados e domingos não contam; feriados não são descontados): se contestar alguma guia, ela volta para a rastreabilidade; **passado o prazo sem decisão, a fatura segue para a auditoria mesmo assim.**
 
 Cada cartão mostra "Fatura nº … · [OCS]", o selo **Aguardando decisão** ou **Prazo vencido** e a data-limite. Se vazio: "Nenhuma glosa pendente de decisão."
 
@@ -821,7 +839,7 @@ Cada cartão mostra "Fatura nº … · [OCS]", o selo **Aguardando decisão** ou
 | **Valor informado pela OCS / Glosa / Valor final após lisura** | Os totais da fatura. |
 | **Tabela por guia** | Procedimento, **Informado (R$/sessão)**, **Contrato (R$/sessão)**, **Glosa (R$)** e **Observação da rastreabilidade**. |
 | **Sua decisão** | Para **cada guia glosada**, escolha **Ok** (concorda com o valor do contrato) ou **Contestar**. |
-| **Motivo da contestação** | Obrigatório ao contestar: **mínimo de 10 caracteres**. |
+| **Motivo da contestação** | Obrigatório ao contestar: **de 10 a 500 caracteres**. |
 | **Responsável (seu nome)** | Seu nome (3 a 100 caracteres). |
 | **Confirmar decisão** | Só habilita quando **todas as guias** têm decisão. Aparece "Faltam n guia(s) sem decisão". |
 | **Sim, confirmar decisão** | Confirmação final. Se houver ao menos uma contestação, a fatura volta para a rastreabilidade (as guias "Ok" não mudam). Se todas ficarem **Ok**, a fatura é liberada para a auditoria. |
@@ -855,10 +873,10 @@ Mostra os espelhos que as OCS enviaram. **Ao inserir o número da fatura, o espe
 
 1. Em um espelho **Sem nº de fatura**, clique em **Inserir nº da fatura** (o sistema busca uma sugestão).
 2. No formulário **Protocolar fatura**:
-   - **Data de Entrada:** só leitura.
-   - **OCS:** só leitura.
-   - **Nº da Fatura:** vem sugerido; formato `XXX/XXXX` (por exemplo, `003/2026`). Não pode repetir um número da mesma OCS.
-   - **Responsável (seu nome):** mínimo de 3 caracteres.
+    - **Data de Entrada:** só leitura.
+    - **OCS:** só leitura.
+    - **Nº da Fatura:** vem sugerido; formato `XXX/XXXX` (por exemplo, `003/2026`). Não pode repetir um número da mesma OCS.
+    - **Responsável (seu nome):** mínimo de 3 caracteres.
 3. Clique em **Salvar protocolo**. A situação muda para **Protocolada**.
 
 **Enviar para a rastreabilidade**
@@ -1031,9 +1049,6 @@ Leia a **Observação do setor de Guias**, corrija e reenvie. Se foi criada pelo
 **A página mostra "Não foi possível carregar…".**
 Clique em **Tentar novamente**. Se persistir, confirme a conexão e avise o suporte.
 
-**A tela mostra "Tela não desenhada (espaço reservado)".**
-É a tela **Início**, que ainda não foi implementada. Use o menu lateral.
-
 **Apareceu "Página não encontrada".**
 O endereço está incorreto. Use o menu lateral ou clique em **Nexus** para voltar ao início.
 
@@ -1042,5 +1057,4 @@ Entre de novo com o seu login. Nada é perdido: o que você salvou ou enviou con
 
 * * *
 
-> Dúvidas ou sugestões? Abra uma **Issue** no repositório do projeto: https://github.com/DATASQUAD-3SEM/BD_3S_NEXUS/issues
 > Regras de negócio completas: [Manual de Regras de Negócio](../Manual_regras_negocio.md) · Instalação: [Manual de Instalação](./Manual_Instalacao.md)
